@@ -19,7 +19,7 @@ const DefaultNavbar = () => {
   return (
     <div className="navbar fixed shadow-xl z-50 px-4 bg-opacity-50 backdrop-blur-md">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Cypher Squad</a>
+        <a className="text-2xl font-bold">Cypher Squad</a>
       </div>
       <div className="flex-none mr-20">
         <label className="swap swap-rotate">
