@@ -17,7 +17,7 @@ const DefaultNavbar = () => {
   },[theme])
 
   return (
-    <div className="navbar fixed shadow-xl z-50 px-4 bg-opacity-50 backdrop-blur-md">
+    <div className="navbar fixed shadow-xl z-50 px-4 bg-opacity-50 backdrop-blur-2xl">
       <div className="flex-1">
         <a className="text-2xl font-bold">Cypher Squad</a>
       </div>

@@ -6,8 +6,8 @@ import DefaultMenu from "./Components/DefaultMenu";
 function App() {
   return (
     <>
-    <DefaultNavbar/>
-      <DefaultMenu/>
+       <DefaultNavbar/>
+       <DefaultMenu/>
       <div id="outer-container">
         <div id="page-wrap">
           <Home/>

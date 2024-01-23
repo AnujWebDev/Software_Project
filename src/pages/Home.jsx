@@ -2,8 +2,32 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import logo from "../assets/logo.png";
 import { TiArrowForward } from "react-icons/ti";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Services from "./Services";
+
 
 const Home = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <>
       <div className="hero1 overflow-hidden container mx-auto pt-20">
@@ -17,7 +41,13 @@ const Home = () => {
               <h1 className="text-2xl font-bold">
                 We are passionate about
                 <br />
-                <span style={{ fontFamily: "PT Sans, sans-serif",letterSpacing:'3px' }} className="mt-20 text-5xl">
+                <span
+                  style={{
+                    fontFamily: "PT Sans, sans-serif",
+                    letterSpacing: "3px",
+                  }}
+                  className="mt-20 text-5xl"
+                >
                   <TypeAnimation
                     sequence={[
                       "conversion rate optimization.",
@@ -37,12 +67,24 @@ const Home = () => {
                   />
                 </span>
               </h1>
-              <p style={{ fontFamily: "PT Sans, sans-serif",letterSpacing:'3px' }} className="py-6 italic text-xl">
+              <p
+                style={{
+                  fontFamily: "PT Sans, sans-serif",
+                  letterSpacing: "3px",
+                }}
+                className="py-6 italic text-xl"
+              >
                 Creating new dimensions in next-gen technologies by providing
                 solutions that match your Business Goals.
               </p>
               <div className="flex justify-center">
-                <button style={{ fontFamily: "PT Sans, sans-serif",letterSpacing:'1px' }} className="flex border hover:scale-105 hover:bg-primary hover:text-white transition ease-in-out duration-[#0.3s] rounded-full p-2 justify-center">
+                <button
+                  style={{
+                    fontFamily: "PT Sans, sans-serif",
+                    letterSpacing: "1px",
+                  }}
+                  className="flex border hover:scale-105 hover:bg-primary hover:text-white transition ease-in-out duration-[#0.3s] rounded-full p-2 justify-center"
+                >
                   Lets Discuss <TiArrowForward className="text-2xl" />
                 </button>
               </div>
@@ -52,7 +94,7 @@ const Home = () => {
             <img src={logo} alt="logo" />
           </div>
         </div>
-        <div
+        {/* <div
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
@@ -80,8 +122,44 @@ const Home = () => {
           <p style={{ fontFamily: "PT Sans, sans-serif" }} className="text-xl text-center py-10">
             Because creativity is the most unfair commercial advantage.
           </p>
+        </div> */}
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+          className="container mt-20 mx-auto"
+        >
+          <p
+            style={{ fontFamily: "PT Sans, sans-serif" }}
+            className="text-4xl text-center my-20 font-bold"
+          >
+            Design, build and maintain products
+          </p>
+          <Carousel
+            responsive={responsive}
+            autoPlay
+            autoPlaySpeed={3000}
+            infinite={true}
+          >
+            <div className="text-center text-2xl font-bold" style={{ fontFamily: "PT Sans, sans-serif" }}>
+              We work with clients starting out and starting over. We believe in
+              producing creative that captures hearts, inspires minds and
+              delivers business results. We’ve built our business organically –
+              through recommendations, word of mouth and working in partnership
+              with our clients over the years.
+            </div>
+            <div className="text-center text-2xl font-bold" style={{ fontFamily: "PT Sans, sans-serif" }}>
+              Everything we create – from brand and marketing strategy to
+              creative executions and digital experiences – is designed to give
+              your brand a distinctive edge in your market.
+            </div>
+            <div className="text-center text-2xl font-bold" style={{ fontFamily: "PT Sans, sans-serif" }}>
+              Because creativity is the most unfair commercial advantage.
+            </div>
+          </Carousel>
         </div>
       </div>
+      <Services/>
     </>
   );
 };
