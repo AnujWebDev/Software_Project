@@ -1,10 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination,EffectFlip, Scrollbar, A11y,Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import 'swiper/css/autoplay'
-import 'swiper/css/effect-flip'
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import app from "../assets/app.png";
@@ -17,7 +16,7 @@ import main from "../assets/main.jpeg"
 const Services = () => {
   return (
     <>
-      <div className="service overflow-hidden flex p-5 my-20">
+      <div  className="service overflow-hidden flex p-5 my-20">
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
@@ -42,21 +41,20 @@ const Services = () => {
         >
           <Swiper
             className="p-4"
-            modules={[Navigation, Pagination, Scrollbar, A11y,EffectFlip,Autoplay]}
+            modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            effect="flip"
             autoplay={{ delay: 2000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide>
-              <div className="flex justify-center pb-2">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+              <div  className="flex  justify-center pb-2">
+                <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl text font-bold text-black absolute top-4 left-4">
                     01
                   </div>
                   <div className="flex justify-center">
@@ -71,11 +69,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text text-black mt-5 text-2xl"
                   >
                     App Development
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className=" text text-black mt-4">
                     Start or accelerate your project with time-tested custom
                     mobile app development services. Our professionals offer
                     full-cycle mobile app development services, including
@@ -89,8 +87,8 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex justify-center pb-10">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+                <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl text font-bold text-black absolute top-4 left-4">
                     02
                   </div>
                   <div className="flex justify-center">
@@ -105,11 +103,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text text-black mt-5 text-2xl"
                   >
                     Web Development
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className="text text-black mt-4">
                     Our website builder assists in fulfilling your distinct
                     vision. Using our user-friendly website development
                     services, we help you construct your brand, look like a pro,
@@ -123,8 +121,8 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex justify-center p-2">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+                <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl font-bold text text-black absolute top-4 left-4">
                     03
                   </div>
                   <div className="flex text-black justify-center">
@@ -139,11 +137,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text-black text mt-5 text-2xl"
                   >
                     Branding App Design
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className=" text-black text mt-4">
                     We assist you in putting your ideas into action as a
                     full-service branding and design firm. Cypher Squad provides
                     a wide range of creative services that are suited to your
@@ -157,8 +155,8 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex justify-center p-2">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+                <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl font-bold text-black text absolute top-4 left-4">
                     04
                   </div>
                   <div className="flex justify-center">
@@ -174,11 +172,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text-black text mt-5 text-2xl"
                   >
                     Consultraition
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className=" text-black text mt-4">
                     In a market with intense competition, you need more than
                     just a terrific website that attracts users to succeed. For
                     ventures to get off the ground and become successful and
@@ -191,8 +189,8 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex justify-center p-2">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+                <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl font-bold text-black text absolute top-4 left-4">
                     05
                   </div>
                   <div className="flex justify-center">
@@ -207,11 +205,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text-black text mt-5 text-2xl"
                   >
                     Digital Marketing
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className=" text-black text mt-4">
                     With our digital marketing services, you can increase
                     organic website traffic to your website. Get more relevant
                     traffic for the search terms that are most important to your
@@ -225,8 +223,8 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex justify-center p-2">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+                <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl font-bold text-black text absolute top-4 left-4">
                     06
                   </div>
                   <div className="flex justify-center">
@@ -241,11 +239,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text-black text mt-5 text-2xl"
                   >
                     DevOps Services
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className=" text-black text mt-4">
                   We encourage businesses to adopt automated, cooperative, and agile working practices in order to improve the software they develop. Our DevOps consulting services will improve the responsiveness, dependability, and productivity of your business. Let us improve your infrastructure automation, integration, and continuous delivery skills so you can grow more quickly and consistently.
                   </p>
                 </div>
@@ -253,8 +251,8 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex justify-center p-2">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+                <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl font-bold text-black text absolute top-4 left-4">
                     07
                   </div>
                   <div className="flex justify-center">
@@ -269,11 +267,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text-black text mt-5 text-2xl"
                   >
                     Retainers
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className=" text-black text mt-4">
                   Our web development retainers serve as a comprehensive service, taking care of upgrades, bug fixes, management, and technical assistance. You may take advantage of a special, customer-focused website that enables your company to reach more customers, increase sales, and raise brand awareness when you sign up for our website retainer package.
                   </p>
                 </div>
@@ -281,8 +279,8 @@ const Services = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="flex justify-center p-2">
-                <div className="max-w-md bg-black p-8 rounded-xl shadow-md relative">
-                  <div className="text-xl font-bold text-white absolute top-4 left-4">
+                <div className="max-w-md card bg-white  p-8 rounded-xl shadow-md relative">
+                  <div className="text-xl font-bold text-black text absolute top-4 left-4">
                     08
                   </div>
                   <div className="flex justify-center">
@@ -297,11 +295,11 @@ const Services = () => {
                       fontFamily: "PT Sans, sans-serif",
                       letterSpacing: "1px",
                     }}
-                    className="text-center text-white mt-5 text-2xl"
+                    className="text-center text-black text  mt-5 text-2xl"
                   >
                     Maintenance
                   </p>
-                  <p className=" text-white mt-4">
+                  <p className=" text-black text mt-4">
                   In order to assist your organization in delivering a quick, safe, and flawless online experience, Cypher Squad offers a comprehensive and individually tailored website maintenance plan. Additionally, we provide customized solutions for enhancing the efficiency of your website as a full-service digital marketing firm.
                   </p>
                 </div>

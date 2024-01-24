@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html[data-theme='black']{
+    .service{
+        background: #6c757d;
+    }
+    .navbar{
+        background:black ;
+    }
+    .card{
+        background: black;
+    }
+    .text{
+        color: white;
+    }
+}
 .service{
     background: linear-gradient( 249.67deg,#ff7a00 21.96%,#835546 52.04%,#0f404d 82.12% );
 }
