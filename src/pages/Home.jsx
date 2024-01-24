@@ -80,9 +80,8 @@ const Home = () => {
                 <button
                   style={{
                     fontFamily: "PT Sans, sans-serif",
-                    letterSpacing: "1px",
                   }}
-                  className="flex border hover:scale-105 hover:bg-primary hover:text-white transition ease-in-out duration-[#0.3s] rounded-full p-2 justify-center"
+                  className="flex border hover:scale-105 hover:bg-primary hover:text-white transition ease-in-out duration-[#0.3s] rounded-full p-4 justify-center"
                 >
                   Lets Discuss <TiArrowForward className="text-2xl" />
                 </button>
