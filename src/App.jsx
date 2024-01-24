@@ -4,6 +4,7 @@ import DefaultNavbar from "./Components/DefaultNavbar";
 import DefaultMenu from "./Components/DefaultMenu";
 import Services from "./pages/Services";
 import Technologies from "./pages/Technologies";
+import Far from "./pages/Far";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Home/>
           <Services/>
           <Technologies/>
+          <Far/>
         </div>
       </div>
     </>

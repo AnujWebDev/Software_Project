@@ -4,8 +4,6 @@ import logo from "../assets/logo.png";
 import { TiArrowForward } from "react-icons/ti";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Services from "./Services";
-import Technologies from "./Technologies";
 
 
 const Home = () => {

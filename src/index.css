@@ -4,7 +4,7 @@
 
 html[data-theme='black']{
     .service{
-        background: #6c757d;
+        background: #343a40;
     }
     .navbar{
         background:black ;
@@ -19,3 +19,16 @@ html[data-theme='black']{
 .service{
     background: linear-gradient( 249.67deg,#ff7a00 21.96%,#835546 52.04%,#0f404d 82.12% );
 }
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-infinite {
+    animation: rotate infinite 20s linear;
+  }
