@@ -1,8 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination,EffectFlip, Scrollbar, A11y,Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import 'swiper/css/autoplay'
+import 'swiper/css/effect-flip'
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import app from "../assets/app.png";
@@ -40,11 +42,13 @@ const Services = () => {
         >
           <Swiper
             className="p-4"
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y,EffectFlip,Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
+            effect="flip"
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
@@ -158,8 +162,9 @@ const Services = () => {
                     04
                   </div>
                   <div className="flex justify-center">
+                    
                     <img
-                      src={app}
+                    src={app}
                       alt="Image"
                       className="rounded-full w-24 h-24"
                     />

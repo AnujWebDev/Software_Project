@@ -5,6 +5,7 @@ import { TiArrowForward } from "react-icons/ti";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Services from "./Services";
+import Technologies from "./Technologies";
 
 
 const Home = () => {
@@ -140,6 +141,7 @@ const Home = () => {
             autoPlay
             autoPlaySpeed={3000}
             infinite={true}
+            className="z-0"
           >
             <div className="text-center text-2xl font-bold" style={{ fontFamily: "PT Sans, sans-serif" }}>
               We work with clients starting out and starting over. We believe in
@@ -159,7 +161,7 @@ const Home = () => {
           </Carousel>
         </div>
       </div>
-      <Services/>
+     
     </>
   );
 };

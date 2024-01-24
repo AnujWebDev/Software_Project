@@ -1,5 +1,5 @@
 import React from 'react';
-import { scaleRotate as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 
 const DefaultMenu = () => {
     var styles = {
