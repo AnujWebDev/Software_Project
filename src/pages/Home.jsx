@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="hero1 overflow-hidden container mx-auto pt-20">
+      <div className="hero1 overflow-hidden min-h-screen container mx-auto pt-20">
         <div className=" pt-20 flex flex-col md:flex-row">
           <div className="hero-content w-full md:w-1/2 pt-20 md:pt-40 text-center">
             <div
