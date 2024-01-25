@@ -1,55 +1,56 @@
-import React from 'react';
-import { push as Menu } from "react-burger-menu";
+import React, { useState } from "react";
+import { scaleDown as Menu } from "react-burger-menu";
+import { Link } from "react-router-dom";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const DefaultMenu = () => {
-    var styles = {
-        bmBurgerButton: {
-          position: 'fixed',
-          width: '36px',
-          height: '30px',
-          right: '36px',
-          top: '17px',
-          zIndex:50
-        },
-        bmBurgerBars: {
-          background: "#FFA500",
-        },
-        bmBurgerBarsHover: {
-          background: '#a90000'
-        },
-        bmCrossButton: {
-          height: '24px',
-          width: '24px'
-        },
-        bmCross: {
-          background: '#bdc3c7'
-        },
-        bmMenuWrap: {
-          position: 'fixed',
-          height: '100%',
-        },
-        bmMenu: {
-          background: '#373a47',
-          padding: '2.5em 1.5em 0',
-          fontSize: '1.15em',
-          right:0,
-          zIndex:99
-        },
-        bmMorphShape: {
-          fill: '#373a47'
-        },
-        bmItemList: {
-          color: '#b8b7ad',
-          padding: '0.8em',
-        },
-        bmItem: {
-          display: 'inline-block',
-        },
-        bmOverlay: {
-          background: 'rgba(0, 0, 0, 0.3)'
-        }
-      }
-      
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+  var styles = {
+    bmBurgerButton: {
+      position: "fixed",
+      width: "36px",
+      height: "30px",
+      right: "36px",
+      top: "17px",
+      zIndex: 50,
+    },
+    bmBurgerBars: {
+      background: "#FFA500",
+    },
+    bmBurgerBarsHover: {
+      background: "#a90000",
+    },
+    bmCrossButton: {
+      height: "24px",
+      width: "24px",
+    },
+    bmCross: {
+      background: "#bdc3c7",
+    },
+    bmMenuWrap: {
+      position: "fixed",
+      height: "100%",
+    },
+    bmMenu: {
+      background: "#090c37",
+      padding: "2.5em 1.5em 0",
+      fontSize: "1.15em",
+      right: 0,
+    },
+    bmItemList: {
+      color: "#b8b7ad",
+      padding: "0.8em",
+    },
+    bmItem: {
+      display: "inline-block",
+    },
+    
+  };
+
   return (
     <div>
       <Menu
@@ -67,35 +68,86 @@ const DefaultMenu = () => {
             gap: "50px",
           }}
         >
-          <button
-            className="p-3 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:bg-black hover:text-white hover:scale-90"
+          <Link
+            to={"/"}
+            className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:text-primary hover:scale-90"
           >
             HOME
-          </button>
-          <button
-            className="p-3 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:bg-black hover:text-white hover:scale-90"
+          </Link>
+          <Link
+            to={"/about"}
+            className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90"
           >
-           ABOUT US
-          </button>
-          <button
-            className="p-3 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:bg-black hover:text-white hover:scale-90"
-          >
+            ABOUT US
+          </Link>
+          <Link className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90">
             PORTFOLIO
-          </button>
-          <button
-            className="p-3 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:bg-black hover:text-white hover:scale-90"
-          >
-           SERVICES
-          </button>
-          <button
-            className="p-3 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:bg-black hover:text-white hover:scale-90"
-          >
+          </Link>
+          <div className="relative inline-block">
+            <Link
+              className="p-2 flex justify-center hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90"
+              onClick={toggleDropdown}
+            >
+              SERVICES <MdOutlineArrowDropDown className="ml-2 text-2xl" />
+            </Link>
+
+            {isDropdownOpen && (
+              <div className=" flex flex-col">
+                <Link className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
+                  APP DEVELOPMENT
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90"
+                >
+                  WEBSITE DEVELOPMENT
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                >
+                  BRANDING & DESIGN
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                >
+                  CONSULTATION
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                >
+                  DIGITAL MARKETING
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                >
+                  DEVOPS
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                >
+                  RETAINERS
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                >
+                  MAINTENANCE
+                </Link>
+              </div>
+            )}
+          </div>
+          <button className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90">
             CONTACT
           </button>
         </div>
       </Menu>
     </div>
-  )
-}
+  );
+};
 
-export default DefaultMenu
+export default DefaultMenu;

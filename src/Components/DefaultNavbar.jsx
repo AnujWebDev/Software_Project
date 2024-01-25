@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const DefaultNavbar = () => {
   const [theme,setTheme]=useState(localStorage.getItem('theme')? localStorage.getItem('theme'):"light");
 
@@ -17,9 +18,9 @@ const DefaultNavbar = () => {
   },[theme])
 
   return (
-    <div className="navbar bg-white fixed z-50 px-4">
+    <div className="navbar bg-white fixed z-40 px-4">
       <div className="flex-1">
-        <a className="text-2xl font-bold">Cypher Squad</a>
+        <Link to={'/'} className="text-2xl font-bold">Cypher Squad</Link>
       </div>
       <div className="flex-none mr-20">
         <label className="swap swap-rotate">

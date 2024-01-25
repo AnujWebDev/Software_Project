@@ -1,24 +1,19 @@
 import React from "react";
-import Home from "./pages/Home";
-import DefaultNavbar from "./Components/DefaultNavbar";
 import DefaultMenu from "./Components/DefaultMenu";
-import Services from "./pages/Services";
-import Technologies from "./pages/Technologies";
-import Far from "./pages/Far";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import LandingPage from "./Components/LandingPage";
+import AboutPage from "./Components/AboutPage";
 
 function App() {
   return (
     <>
-       <DefaultNavbar/>
+    <Router>
        <DefaultMenu/>
-      <div id="outer-container">
-        <div id="page-wrap">
-          <Home/>
-          <Services/>
-          <Technologies/>
-          <Far/>
-        </div>
-      </div>
+       <Routes>
+        <Route path="/" element={<LandingPage/>}></Route>
+        <Route path="/about" element={<AboutPage/>}></Route>
+      </Routes>
+      </Router>
     </>
   );
 }
