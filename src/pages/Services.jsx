@@ -76,19 +76,19 @@ const servicesData = [
 const Services = () => {
   return (
     <>
-      <div className="service overflow-hidden flex p-5 my-20">
+      <div className="service overflow-hidden flex flex-col  lg:flex-row p-5 my-20">
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="w-1/2 hidden lg:block"
+          className="w-full lg:w-1/2 lg:pl-10"
         >
           <h1
             style={{
               fontFamily: "PT Sans, sans-serif",
               letterSpacing: "1px",
             }}
-            className="text-center mt-48 text-white font-bold text-4xl"
+            className=" my-10 lg:mt-48 text-center w-full text-white font-bold text-4xl"
           >
             What are you looking for?
           </h1>

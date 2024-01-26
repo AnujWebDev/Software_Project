@@ -93,29 +93,29 @@ const DefaultMenu = () => {
 
             {isDropdownOpen && (
               <div className=" flex flex-col">
-                <Link className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
+                <Link to={"/appdev"} className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
                   APP DEVELOPMENT
                 </Link>
                 <Link
-                  to={"/about"}
+                  to={"/webdev"}
                   className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90"
                 >
                   WEBSITE DEVELOPMENT
                 </Link>
                 <Link
-                  to={"/about"}
+                  to={"/brand"}
                   className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   BRANDING & DESIGN
                 </Link>
                 <Link
-                  to={"/about"}
+                  to={"/consultation"}
                   className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   CONSULTATION
                 </Link>
                 <Link
-                  to={"/about"}
+                  to={"/digital"}
                   className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   DIGITAL MARKETING

@@ -41,3 +41,6 @@ html[data-theme='black']{
 #core{
   background: white;
 }
+.box{
+  background: linear-gradient(185.07deg, rgb(255, 122, 0) 24.77%, rgb(15, 64, 77) 93.37%);
+}
