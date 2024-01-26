@@ -144,11 +144,11 @@ const Services = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className="text-center text text-black mt-5 text-2xl"
+                      className="text-center text text-black mt-3 text-2xl"
                     >
                       {service.title}
                     </p>
-                    <p className="text text-black mt-4">{service.description}</p>
+                    <p className="text text-black mt-2">{service.description}</p>
                   </div>
                 </div>
               </SwiperSlide>
