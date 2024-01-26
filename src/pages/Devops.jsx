@@ -9,40 +9,34 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const Brand = () => {
+const Devops = () => {
   const servicesData = [
     {
       id: 1,
-      title: "Determine brand guidlines ",
+      title: "End-to-end Implementation ",
       description:
-        "Set standards for the use of your brand to keep creating value for your company."    
+        "Analyze, design, and construct the framework in Devops."    
       },
     {
       id: 2,
 
-      title: "Create value proposition ",
+      title: "Assessment & Strategy",
       description:
-        "Memorable logo and appealing designs - a simple & unique way to convey your message to your audience. " 
+        "Identify critical metrics and create a roadmap for success. " 
         },
     {
       id: 3,
-      title: "Understand  ",
+      title: "Framework & Tool Construction ",
       description:
-        "Set standards for the use of your brand to keep creating value for your company."
+        "Define the structure & implement setup for development."
       },
     {
       id: 4,
 
-      title: "Research & brand strategy ",
+      title: "Manage Services ",
       description:
-        "Identify your target audience, clarify what goods and services you offer, and position yourself in the competitor landscape."
+        "Action systematic processes & accelerate development."
           },
-    {
-      id: 5,
-      title: "Designing & conceptualizing ",
-      description:
-        "Memorable logo and appealing designs - a simple & unique way to convey your message to your audience." 
-         },
   ];
   return (
     <div className=" overflow-hidden">
@@ -77,7 +71,7 @@ const Brand = () => {
               }}
               className="text-2xl font-bold"
             >
-             Branding And Design
+              DevOps Services
             </h1>
             <p
             data-aos="fade-right"
@@ -88,7 +82,7 @@ const Brand = () => {
               }}
               className="py-6 text-2xl"
             >
-             Convert simple ideas into a brand identity to elevate<br/> your business
+              Achieve greater agility and effective business automation to speed up time-to-market<br/> and maintain high software quality.
             </p>
           </div>
           <div className="w-full sm:w-1/2 bg-white p-2 flex justify-center">
@@ -111,7 +105,9 @@ const Brand = () => {
               }}
               className="py-6 text-2xl"
             >
-              Making your business a lasting digital success isn't easy. Our full-services digital team can design and fuel your full-fledged difital marketing plans.
+              Share ownership and enjoy collaborative steps as together we shorten the software development life cycle for your business.
+
+
             </p>
           </div>
           <div className="w-full sm:w-1/2 flex justify-center">
@@ -125,7 +121,7 @@ const Brand = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl mt-8 font-bold"
+              className="text-2xl mt-16 font-bold"
             >
               HOW WE WORK
             </h1>
@@ -177,7 +173,7 @@ const Brand = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className=" text text-white pt-40  p-5 text-2xl"
+                      className=" text text-white pt-40 p-5 text-2xl"
                     >
                       {service.title}
                     </p>
@@ -193,4 +189,4 @@ const Brand = () => {
   );
 };
 
-export default Brand;
+export default Devops;

@@ -121,19 +121,19 @@ const DefaultMenu = () => {
                   DIGITAL MARKETING
                 </Link>
                 <Link
-                  to={"/about"}
+                  to={"/devops"}
                   className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   DEVOPS
                 </Link>
                 <Link
-                  to={"/about"}
+                  to={"/retainers"}
                   className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   RETAINERS
                 </Link>
                 <Link
-                  to={"/about"}
+                  to={"/maintenance"}
                   className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   MAINTENANCE

@@ -15,40 +15,37 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const Digital = () => {
+const Retails = () => {
   const servicesData = [
     {
       id: 1,
-      title: "Strategy",
-      description:
-        "The framework to drive traffic to your website, convert them into leads, and leads into sales.",
+      title: "Monitor",
+      description: "Set up regular communication channels to achive retainers.",
     },
     {
       id: 2,
 
-      title: "Testing and Reporting ",
+      title: "Report",
       description:
-        "Tracking metrics, key performance indicators, and campaign analysis. Measuring, analyzing, and optimizing campaigns to maximize performance and value. ",
+        "Update the business benefits of our retainer service. ",
     },
     {
       id: 3,
-      title: "Branding",
-      description:
-        "Tell the story of your company to drive customer loyalty.",
+      title: "Examine ",
+      description: "Monitor and list your service request to build a business case.",
     },
     {
       id: 4,
 
-      title: "Persona analysis",
-      description:
-        "Data and research on ideal customers for an enjoyable product experience.",
+      title: "Structure",
+      description: "Align your brand interest with your business needs and plan our structures.",
     },
     {
-      id: 5,
-      title: "Content",
-      description:
-        "Videos, blogs, vlogs, infographics, and social media posts, that are right for you.",
-    },
+        id: 5,
+  
+        title: "Plan",
+        description: "Define timeframes and delivery for all services with full planning.",
+      },
   ];
   return (
     <div className=" overflow-hidden">
@@ -80,7 +77,7 @@ const Digital = () => {
               }}
               className="text-2xl font-bold"
             >
-              Digital Marketing
+              Retainers
             </h1>
             <p
               data-aos="fade-right"
@@ -91,8 +88,7 @@ const Digital = () => {
               }}
               className="py-6 text-2xl"
             >
-              Drive result-oriented digital plans that match your unique
-              <br /> business needs.
+              Tap into better value for your business by locking in your brand<br/> identity in a one-time contract.
             </p>
           </div>
           <div className="w-full sm:w-1/2 bg-white p-2 flex justify-center">
@@ -116,11 +112,7 @@ const Digital = () => {
               }}
               className="py-6 text-2xl"
             >
-              Making your business a lasting digital success isn’t easy. Our
-              full-services digital team can design and fuel your full-fledged
-              digital marketing plans.Making your business a lasting digital
-              success isn’t easy. Our full-services digital team can design and
-              fuel your full-fledged digital marketing plans.
+              Together, we build your brand, focusing on uninterrupted assistance and ongoing, continuous improvements.
             </p>
           </div>
           <div className="w-full sm:w-1/2 flex justify-center">
@@ -194,7 +186,7 @@ const Digital = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className=" text text-white pt-32 p-5 text-2xl"
+                      className=" text text-white pt-40 p-5 text-2xl"
                     >
                       {service.title}
                     </p>
@@ -210,4 +202,4 @@ const Digital = () => {
   );
 };
 
-export default Digital;
+export default Retails;

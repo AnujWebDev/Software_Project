@@ -8,6 +8,9 @@ import WebDevPage from "./Components/WebDevPage";
 import BrandPage from "./Components/BrandPage"
 import ConsultrationPage from "./Components/ConsultrationPage";
 import DigitalPage from "./Components/DigitalPage";
+import DevopsPage from "./Components/DevopsPage";
+import RetainersPage from "./Components/RetainersPage";
+import MainTenancePage from "./Components/MainTenancePage";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path="/brand" element={<BrandPage/>}></Route>
         <Route path="/consultation" element={<ConsultrationPage/>}></Route>
         <Route path="/digital" element={<DigitalPage/>}></Route>
+        <Route path="/devops" element={<DevopsPage/>}></Route>
+        <Route path="/retainers" element={<RetainersPage/>}></Route>
+        <Route path="/maintenance" element={<MainTenancePage/>}></Route>
       </Routes>
       </Router>
     </>

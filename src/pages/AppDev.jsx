@@ -60,7 +60,7 @@ const AppDev = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-6 flex italic text-xl"
+          className="py-14 lg:py-6 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>

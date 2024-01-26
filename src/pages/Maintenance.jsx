@@ -15,39 +15,39 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const Digital = () => {
+const Maintenance = () => {
   const servicesData = [
     {
       id: 1,
-      title: "Strategy",
-      description:
-        "The framework to drive traffic to your website, convert them into leads, and leads into sales.",
+      title: "Hosting & server performance",
+      description: "Monitor time to load, server response codes, and errors.",
     },
     {
       id: 2,
 
-      title: "Testing and Reporting ",
+      title: "Strategic web support",
       description:
-        "Tracking metrics, key performance indicators, and campaign analysis. Measuring, analyzing, and optimizing campaigns to maximize performance and value. ",
+        "Get help to maintain and improve site performance & ROI through regular evaluation.",
     },
     {
       id: 3,
-      title: "Branding",
+      title: "Testing",
       description:
-        "Tell the story of your company to drive customer loyalty.",
+        "Functionality, UX, server interactions, compatibility, security & performance - test across entire projects or focus on specific areas.",
     },
     {
       id: 4,
 
-      title: "Persona analysis",
+      title: "Review",
       description:
-        "Data and research on ideal customers for an enjoyable product experience.",
+        "Bridge digital strategy and your business goals using tried & tested metrics.",
     },
     {
       id: 5,
-      title: "Content",
+
+      title: "Updates and bug fixes",
       description:
-        "Videos, blogs, vlogs, infographics, and social media posts, that are right for you.",
+        "Upgrade to new features & functions and backup data at regular intervals.",
     },
   ];
   return (
@@ -80,7 +80,7 @@ const Digital = () => {
               }}
               className="text-2xl font-bold"
             >
-              Digital Marketing
+              Maintenance
             </h1>
             <p
               data-aos="fade-right"
@@ -91,8 +91,8 @@ const Digital = () => {
               }}
               className="py-6 text-2xl"
             >
-              Drive result-oriented digital plans that match your unique
-              <br /> business needs.
+              Improve performance & reduce security risks with reliable, capable
+              <br /> maintenance solutions
             </p>
           </div>
           <div className="w-full sm:w-1/2 bg-white p-2 flex justify-center">
@@ -116,11 +116,9 @@ const Digital = () => {
               }}
               className="py-6 text-2xl"
             >
-              Making your business a lasting digital success isn’t easy. Our
-              full-services digital team can design and fuel your full-fledged
-              digital marketing plans.Making your business a lasting digital
-              success isn’t easy. Our full-services digital team can design and
-              fuel your full-fledged digital marketing plans.
+              Attract and retain customers, and reduce operational costs. Our
+              cost-effective maintenance solutions ensure your business website
+              is stable & secure.
             </p>
           </div>
           <div className="w-full sm:w-1/2 flex justify-center">
@@ -134,7 +132,7 @@ const Digital = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl mt-16 font-bold"
+              className="text-2xl mt-8 font-bold"
             >
               HOW WE WORK
             </h1>
@@ -194,7 +192,7 @@ const Digital = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className=" text text-white pt-32 p-5 text-2xl"
+                      className=" text text-white pt-40 p-5 text-2xl"
                     >
                       {service.title}
                     </p>
@@ -210,4 +208,4 @@ const Digital = () => {
   );
 };
 
-export default Digital;
+export default Maintenance;
