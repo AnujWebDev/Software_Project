@@ -5,9 +5,22 @@ import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const DefaultMenu = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
+  };
+
+  const toggleMenu = ({ isOpen }) => {
+    setMenuOpen(isOpen);
+    if (!isOpen) {
+      setDropdownOpen(false);
+    }
+  };
+
+  const closeNavbar = () => {
+    setDropdownOpen(false);
+    setMenuOpen(false);
   };
   var styles = {
     bmBurgerButton: {
@@ -59,6 +72,7 @@ const DefaultMenu = () => {
         outerContainerId={"outer-container"}
         itemListElement="div"
         right
+        onStateChange={toggleMenu}
       >
         <div
           style={{
@@ -71,6 +85,7 @@ const DefaultMenu = () => {
           <Link
             to={"/"}
             className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:text-primary hover:scale-90"
+            onClick={closeNavbar}
           >
             HOME
           </Link>

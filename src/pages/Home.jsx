@@ -29,23 +29,36 @@ const Home = () => {
 
   return (
     <>
-      <div className="hero1 overflow-hidden container mx-auto pt-20">
-        <div className=" pt-20 flex flex-col md:flex-row">
-          <div className="hero-content w-full md:w-1/2 pt-20 md:pt-40 text-center">
+      <div className="hero1 overflow-hidden min-h-screen container mx-auto pt-20">
+        <div className=" pt-10 flex flex-col md:flex-row">
+          <div className="hero-content w-full md:w-1/2 pt-20 md:pt-20 text-center">
+            
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <h1 className="text-2xl font-bold">
+              <p
+                style={{
+                  fontFamily: "PT Sans, sans-serif",
+                  letterSpacing: "0px",
+          
+                }}
+                className="py-6 text-left italic text-2xl"
+              >
+                Creating new dimensions in next-gen technologies by providing
+                solutions that match your Business Goals.
+              </p>
+              <h1 className="text-6xl text-left">
                 We are passionate about
                 <br />
                 <span
                   style={{
                     fontFamily: "PT Sans, sans-serif",
                     letterSpacing: "3px",
+                    
                   }}
-                  className="mt-20 text-5xl"
+                  className="mt-20 font-extrabold text-4xl"
                 >
                   <TypeAnimation
                     sequence={[
@@ -66,22 +79,13 @@ const Home = () => {
                   />
                 </span>
               </h1>
-              <p
-                style={{
-                  fontFamily: "PT Sans, sans-serif",
-                  letterSpacing: "3px",
-                }}
-                className="py-6 italic text-xl"
-              >
-                Creating new dimensions in next-gen technologies by providing
-                solutions that match your Business Goals.
-              </p>
-              <div className="flex justify-center">
+              
+              <div className="flex mt-10  justify-left">
                 <button
                   style={{
                     fontFamily: "PT Sans, sans-serif",
                   }}
-                  className="flex border hover:scale-105 hover:bg-primary hover:text-white transition ease-in-out duration-[#0.3s] rounded-full p-4 justify-center"
+                  className="flex border hover:scale-105 hover:bg-primary px-10 hover:text-white transition ease-in-out duration-[#0.3s] rounded-full p-2 justify-center"
                 >
                   Lets Discuss <TiArrowForward className="text-2xl" />
                 </button>
@@ -92,7 +96,7 @@ const Home = () => {
             <img src={logo} alt="logo" />
           </div>
         </div>
-        {/* <div
+        <div
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
@@ -120,8 +124,8 @@ const Home = () => {
           <p style={{ fontFamily: "PT Sans, sans-serif" }} className="text-xl text-center py-10">
             Because creativity is the most unfair commercial advantage.
           </p>
-        </div> */}
-        <div
+        </div>
+        {/* <div
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
@@ -156,7 +160,7 @@ const Home = () => {
               Because creativity is the most unfair commercial advantage.
             </div>
           </Carousel>
-        </div>
+        </div> */}
       </div>
      
     </>

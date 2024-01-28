@@ -20,7 +20,16 @@ html[data-theme='black']{
     .text{
         color: white;
     }
+    #img1{
+      display: none;
+    }
+    #img2{
+      display: block;
+      position: relative;
+      top: -50px;
+    }
 }
+
 .service{
     background: linear-gradient( 249.67deg,#ff7a00 21.96%,#835546 52.04%,#0f404d 82.12% );
 }

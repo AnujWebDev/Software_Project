@@ -114,11 +114,9 @@ const Services = () => {
               },
               // when window width is >= 1024px
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 2.5,
               },
             }}
-
-            navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}
@@ -154,6 +152,7 @@ const Services = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+  
         </div>
       </div>
     </>

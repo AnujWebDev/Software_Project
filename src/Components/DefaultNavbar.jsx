@@ -1,24 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 const DefaultNavbar = () => {
-  const [theme,setTheme]=useState(localStorage.getItem('theme')? localStorage.getItem('theme'):"light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+  const [scrolling, setScrolling] = useState(false);
 
-  const HandleToggle=(e)=>{
-    if(e.target.checked){
-      setTheme('black');
-    }else{
-      setTheme('light');
+  const HandleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("black");
+    } else {
+      setTheme("light");
     }
-  }
+  };
 
-  useEffect(()=>{
-    localStorage.setItem('theme',theme);
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
     const localTheme = localStorage.getItem("theme");
-    document.querySelector("html").setAttribute("data-theme",localTheme)
-  },[theme])
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [theme]);
 
   return (
-    <div className="navbar bg-white fixed z-40 px-4">
+    <div className={`navbar fixed z-40 px-4 ${
+      scrolling ? "bg-white" : "" 
+    }`}>
       <div className="flex-1">
         <Link to={'/'} className="text-2xl font-bold">Cypher Squad</Link>
       </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { ImMail3 } from "react-icons/im";
 import { VscCallIncoming } from "react-icons/vsc";
 import lets from "../assets/lets.png";
+import img1 from "../assets/img1.png"
+import img2 from "../assets/img2.png"
 
 const Far = () => {
   return (
@@ -11,7 +13,7 @@ const Far = () => {
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-easing="ease-in-sine"
-          className="text-4xl md:text-5xl lg:text-6xl font-bold py-6"
+          className="text-3xl md:text-3xl lg:text-5xl font-bold py-6"
         >
           You've made it this far......
         </h1>
@@ -19,7 +21,7 @@ const Far = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="text-base md:text-xl py-6"
+          className="text-base md:text-lg py-6"
         >
           “As a provider of tech-enabled digital marketing solutions, Cypher
           Squad develops unique plans for each of its clients in accordance with
@@ -50,15 +52,22 @@ const Far = () => {
           </p>
         </div>
       </div>
-      <div className="md:w-1/2 bg-white my-20 flex justify-center">
+      <div className="md:w-1/2 my-20 flex justify-center">
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
         >
           <img
-            src={lets}
-            className="rotate-infinite my-10 md:my-20"
+            src={img1}
+            id="img1"
+            className="rotate-infinite w-[250px] h-[250px] my-10 md:my-20"
+            alt="circle"
+          />
+          <img
+            src={img2}
+            id="img2"
+            className="rotate-infinite w-[400px] h-[400px]  hidden my-10 md:my-20"
             alt="circle"
           />
         </div>
