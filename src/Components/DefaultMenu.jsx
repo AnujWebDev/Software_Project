@@ -95,7 +95,7 @@ const DefaultMenu = () => {
           >
             ABOUT US
           </Link>
-          <Link className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90">
+          <Link to={'/portofolio'} className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90">
             PORTFOLIO
           </Link>
           <div className="relative inline-block">

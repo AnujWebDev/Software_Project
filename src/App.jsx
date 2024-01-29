@@ -11,6 +11,8 @@ import DigitalPage from "./Components/DigitalPage";
 import DevopsPage from "./Components/DevopsPage";
 import RetainersPage from "./Components/RetainersPage";
 import MainTenancePage from "./Components/MainTenancePage";
+import Portfolio from "./Components/Portfolio";
+import PortfolioPage from "./Components/PortfolioPage";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
         <Route path="/devops" element={<DevopsPage/>}></Route>
         <Route path="/retainers" element={<RetainersPage/>}></Route>
         <Route path="/maintenance" element={<MainTenancePage/>}></Route>
+        <Route path="/portofolio" element={<PortfolioPage/>}></Route>
       </Routes>
       </Router>
     </>
