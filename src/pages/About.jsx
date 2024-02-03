@@ -15,7 +15,7 @@ const About = () => {
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-easing="ease-in-sine"
-        className=" container p-5 mx-auto pt-20"
+        className=" container p-5  mx-auto pt-20"
       >
         <p
           style={{
@@ -24,27 +24,26 @@ const About = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-6  flex italic text-xl"
+          className="py-6  ml-0 lg:ml-20 flex italic text-xl"
         >
           About <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
         <h1
           style={{
-            fontSize: "45px",
+            fontSize: "60px",
             fontWeight: "bold",
-            lineHeight: "60px",
+            lineHeight: "80px",
           }}
-          className="text-2xl font-bold"
+          className="text-2xl ml-0 lg:ml-20 font-bold"
         >
           We Help You Achieve Your
           <br /> Digital Business Goals
         </h1>
-        <div className=" container mt-20 w-full lg:w-[1200px] mx-auto">
-          <p
+        <p
             style={{
               fontFamily: "PT Sans, sans-serif",
             }}
-            className="py-6 text-2xl"
+            className="py-6 ml-0 lg:ml-20 mt-20 text-gray-500 text-2xl"
           >
             Elevate your brand's credibility and recognition with our expert
             team. Connect with industry-leading professionals in SEO, app
@@ -52,6 +51,8 @@ const About = () => {
             comes to delivering value and achieving results, We are unmatched.
             We eliminate the negatives and emphasize the positives.
           </p>
+        <div className=" container mt-20 w-full lg:w-[1200px] mx-auto">
+          
         </div>
       </div>
       <div className="mt-20">

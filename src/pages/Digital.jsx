@@ -63,7 +63,7 @@ const Digital = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 lg:py-6 flex italic text-xl"
+          className="py-14 lg:py-6 ml-0 lg:ml-20 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -78,7 +78,7 @@ const Digital = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl font-bold"
+              className="text-2xl ml-0 lg:ml-20 font-bold"
             >
               Digital Marketing
             </h1>
@@ -89,7 +89,7 @@ const Digital = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 lg:ml-20 text-2xl"
             >
               Drive result-oriented digital plans that match your unique
               <br /> business needs.
@@ -114,7 +114,7 @@ const Digital = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 ml-0 lg:ml-20 text-2xl"
             >
               Making your business a lasting digital success isn’t easy. Our
               full-services digital team can design and fuel your full-fledged
@@ -165,7 +165,6 @@ const Digital = () => {
               slidesPerView: 4,
             },
           }}
-          navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}

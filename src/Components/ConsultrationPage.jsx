@@ -3,6 +3,7 @@ import DefaultNavbar from './DefaultNavbar'
 import Consultation from '../pages/Consultation'
 import Far from '../pages/Far'
 import ConsultationService from '../pages/ConsultationService'
+import Footer from '../pages/Footer'
 
 const ConsultrationPage = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const ConsultrationPage = () => {
   }, []);
   return (
     <div id="outer-container">
-      <div id="page-wrap" className=" border">
+      <div id="page-wrap">
         <DefaultNavbar />
         <Consultation/>
         <ConsultationService/>

@@ -84,7 +84,7 @@ const BrandService = () => {
             style={{
               fontFamily: "PT Sans, sans-serif",
             }}
-            className="py-6 text-white text-2xl"
+            className=" text-white text-2xl"
           >
             Communicate your company's purpose, vision, and values and develop a plan that helps meet your business goals.
           </p>
@@ -113,8 +113,6 @@ const BrandService = () => {
                 slidesPerView: 2,
               },
             }}
-
-            navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}

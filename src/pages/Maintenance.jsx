@@ -63,7 +63,7 @@ const Maintenance = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 lg:py-6 flex italic text-xl"
+          className="py-14 lg:py-6 ml-0 lg:ml-20 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -78,7 +78,7 @@ const Maintenance = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl font-bold"
+              className="text-2xl ml-0 lg:ml-20 font-bold"
             >
               Maintenance
             </h1>
@@ -89,7 +89,7 @@ const Maintenance = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className=" ml-0 lg:ml-20 text-2xl"
             >
               Improve performance & reduce security risks with reliable, capable
               <br /> maintenance solutions
@@ -114,7 +114,7 @@ const Maintenance = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 ml-0 lg:ml-20 text-2xl"
             >
               Attract and retain customers, and reduce operational costs. Our
               cost-effective maintenance solutions ensure your business website
@@ -163,7 +163,6 @@ const Maintenance = () => {
               slidesPerView: 4,
             },
           }}
-          navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}

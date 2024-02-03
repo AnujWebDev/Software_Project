@@ -54,7 +54,7 @@ const Devops = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 lg:py-6 flex italic text-xl"
+          className="py-14 ml-0 lg:ml-20  lg:py-6 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -69,7 +69,7 @@ const Devops = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl font-bold"
+              className="text-2xl ml-0 lg:ml-20 font-bold"
             >
               DevOps Services
             </h1>
@@ -80,7 +80,7 @@ const Devops = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 ml-0 lg:ml-20 text-2xl"
             >
               Achieve greater agility and effective business automation to speed up time-to-market<br/> and maintain high software quality.
             </p>
@@ -152,8 +152,6 @@ const Devops = () => {
                 slidesPerView: 4,
               },
             }}
-
-            navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}

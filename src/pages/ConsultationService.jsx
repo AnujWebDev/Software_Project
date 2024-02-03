@@ -73,7 +73,7 @@ const ConsultationService = () => {
               fontFamily: "PT Sans, sans-serif",
               letterSpacing: "1px",
             }}
-            className=" my-10 lg:mt-28 text-white font-bold text-4xl"
+            className=" lg:mt-28 text-white font-bold text-4xl"
           >
             OUR CONSULTATION SERVICES
           </h1>
@@ -113,8 +113,6 @@ const ConsultationService = () => {
                 slidesPerView: 2,
               },
             }}
-
-            navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}

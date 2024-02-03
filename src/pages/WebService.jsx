@@ -73,7 +73,7 @@ const WebService = () => {
               fontFamily: "PT Sans, sans-serif",
               letterSpacing: "1px",
             }}
-            className=" my-10 lg:mt-48 text-white font-bold text-4xl"
+            className=" lg:mt-48 text-white font-bold text-4xl"
           >
             OUR SERVICES
           </h1>
@@ -84,7 +84,7 @@ const WebService = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-white text-2xl"
+              className=" text-white text-2xl"
             >
               Engage customers and expand your customer base online to meet your business goals.
             </p>
@@ -113,8 +113,6 @@ const WebService = () => {
                 slidesPerView: 2,
               },
             }}
-
-            navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}

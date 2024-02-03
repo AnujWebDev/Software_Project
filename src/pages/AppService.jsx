@@ -73,7 +73,7 @@ const AppService = () => {
               fontFamily: "PT Sans, sans-serif",
               letterSpacing: "1px",
             }}
-            className=" my-10 lg:mt-48 text-white font-bold text-4xl"
+            className=" my-1 lg:mt-48 text-white font-bold text-4xl"
           >
             OUR SERVICES
           </h1>
@@ -84,7 +84,7 @@ const AppService = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-white text-2xl"
+              className=" text-white text-2xl"
             >
               Go for result-driven web, desktop, and mobile apps that can take your business to the next level. 
             </p>
@@ -113,8 +113,6 @@ const AppService = () => {
                 slidesPerView: 2,
               },
             }}
-
-            navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}

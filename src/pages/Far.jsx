@@ -8,12 +8,12 @@ import img2 from "../assets/img2.png";
 const Far = () => {
   return (
     <div className="flex flex-col overflow-hidden md:flex-row mt-10 md:mt-20 container mx-auto">
-      <div className="md:w-1/2 my-10 p-5 md:my-20">
+      <div className="md:w-1/2 my-10  md:my-20">
         <h1
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-easing="ease-in-sine"
-          className="text-3xl md:text-3xl lg:text-5xl font-bold py-6"
+          className="text-3xl md:text-3xl p-20 lg:text-5xl font-bold py-6"
         >
           You've made it this far......
         </h1>
@@ -21,7 +21,7 @@ const Far = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="text-base md:text-lg py-6"
+          className="text-base md:text-lg p-20 py-6"
         >
           “Leading provider of technology-driven digital marketing solutions, we
           take pride in crafting customized strategies for our clients based on
@@ -37,7 +37,7 @@ const Far = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-            className="flex hover:text-red-500 transition ease-in-out duration-[#0.3s] items-center text-base md:text-2xl"
+            className="flex hover:text-red-500 ml-16 transition ease-in-out duration-[#0.3s] items-center text-base md:text-2xl"
           >
             <ImMail3 className="text-4xl md:text-4xl  mx-2 md:mx-5" />
             info@cypher-squad.com
@@ -53,7 +53,7 @@ const Far = () => {
           </p>
         </div>
       </div>
-      <div className="md:w-1/2 my-20 flex justify-center">
+      <div className="md:w-1/2 my-20  flex justify-center">
         <div
           data-aos="fade-up"
           data-aos-duration="1000"

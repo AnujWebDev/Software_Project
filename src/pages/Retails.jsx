@@ -60,7 +60,7 @@ const Retails = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 lg:py-6 flex italic text-xl"
+          className="py-14 lg:py-6 ml-0 lg:ml-20 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -75,7 +75,7 @@ const Retails = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl font-bold"
+              className="text-2xl ml-0 lg:ml-20 font-bold"
             >
               Retainers
             </h1>
@@ -86,7 +86,7 @@ const Retails = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 ml-0 lg:ml-20 text-2xl"
             >
               Tap into better value for your business by locking in your brand<br/> identity in a one-time contract.
             </p>
@@ -110,7 +110,7 @@ const Retails = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 ml-0 lg:ml-20 text-2xl"
             >
               Together, we build your brand, focusing on uninterrupted assistance and ongoing, continuous improvements.
             </p>
@@ -157,7 +157,6 @@ const Retails = () => {
               slidesPerView: 4,
             },
           }}
-          navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}

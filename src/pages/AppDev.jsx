@@ -60,7 +60,7 @@ const AppDev = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 lg:py-6 flex italic text-xl"
+          className="py-14 lg:py-6 ml-0 lg:ml-20flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -75,7 +75,7 @@ const AppDev = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl font-bold"
+              className="text-2xl ml-0 lg:ml-20 font-bold"
             >
               App Development
             </h1>
@@ -86,7 +86,7 @@ const AppDev = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 ml-0 lg:ml-20 text-2xl"
             >
               Modernize your operations, defeat challenges, and boost productivity
               by
@@ -111,7 +111,7 @@ const AppDev = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 text-2xl"
+              className="py-6 ml-0 lg:ml-20 text-2xl"
             >
               Your brand's credibility and recognition can soar with the right
               team. Get in touch with leading experts in SEO, app design, web
@@ -162,8 +162,6 @@ const AppDev = () => {
                 slidesPerView: 4,
               },
             }}
-
-            navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}

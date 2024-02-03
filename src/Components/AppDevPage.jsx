@@ -13,7 +13,7 @@ const AppDevPage = () => {
       }, []);
   return (
     <div id="outer-container">
-        <div id="page-wrap" className=' border'>
+        <div id="page-wrap">
         <DefaultNavbar/>
         <AppDev/>
         <AppService/>

@@ -12,7 +12,7 @@ const ContactPage = () => {
   }, []);
   return (
     <div id="outer-container">
-      <div id="page-wrap" className=" border">
+      <div id="page-wrap">
         <DefaultNavbar />
         <Contact />
         <Footer/>
