@@ -4,6 +4,7 @@ import Services from '../pages/Services';
 import Technologies from '../pages/Technologies';
 import Far from '../pages/Far';
 import DefaultNavbar from './DefaultNavbar';
+import Footer from '../pages/Footer';
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
           <Services/>
           <Technologies/>
           <Far/>
+          <Footer/>
           </div>
       </div>
   )

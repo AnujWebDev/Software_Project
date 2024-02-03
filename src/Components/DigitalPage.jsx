@@ -3,6 +3,7 @@ import DefaultNavbar from './DefaultNavbar';
 import Digital from '../pages/Digital';
 import DigitalService from '../pages/DigitalService';
 import Far from '../pages/Far';
+import Footer from '../pages/Footer';
 
 const DigitalPage = () => {
     useEffect(() => {
@@ -19,6 +20,7 @@ const DigitalPage = () => {
         <Digital/>
         <DigitalService/>
         <Far/>
+        <Footer/>
           </div>
       </div>
   )

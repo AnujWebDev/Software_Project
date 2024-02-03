@@ -3,6 +3,7 @@ import DefaultNavbar from './DefaultNavbar';
 import WebDev from '../pages/WebDev';
 import WebService from '../pages/WebService';
 import Far from '../pages/Far';
+import Footer from '../pages/Footer';
 
 const WebDevPage = () => {
     useEffect(() => {
@@ -18,6 +19,7 @@ const WebDevPage = () => {
         <WebDev/>
         <WebService/>
         <Far/>
+        <Footer/>
           </div>
       </div>
   )

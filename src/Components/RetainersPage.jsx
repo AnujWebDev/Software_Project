@@ -3,6 +3,7 @@ import DefaultNavbar from './DefaultNavbar';
 import Retails from '../pages/Retails';
 import Far from '../pages/Far';
 import RetainersServices from '../pages/RetainersServices';
+import Footer from '../pages/Footer';
 const RetainersPage = () => {
     useEffect(() => {
         window.scrollTo({
@@ -17,6 +18,7 @@ const RetainersPage = () => {
         <Retails/>
         <RetainersServices/>
         <Far/>
+        <Footer/>
           </div>
       </div>
   )

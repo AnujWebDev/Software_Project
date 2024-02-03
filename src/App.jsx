@@ -13,6 +13,8 @@ import RetainersPage from "./Components/RetainersPage";
 import MainTenancePage from "./Components/MainTenancePage";
 import Portfolio from "./Components/Portfolio";
 import PortfolioPage from "./Components/PortfolioPage";
+import Contact from "./pages/Contact";
+import ContactPage from "./Components/ContactPage";
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
         <Route path="/retainers" element={<RetainersPage/>}></Route>
         <Route path="/maintenance" element={<MainTenancePage/>}></Route>
         <Route path="/portofolio" element={<PortfolioPage/>}></Route>
+        <Route path="/contact" element={<ContactPage/>}></Route>
       </Routes>
       </Router>
     </>

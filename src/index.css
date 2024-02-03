@@ -28,6 +28,26 @@ html[data-theme='black']{
       position: relative;
       top: -50px;
     }
+    .foot{
+      background: white;
+      color: black;
+    }
+    #outer-container{
+      background-color: #090c37;
+    }
+    #page-wrap{
+      background-color: black;
+    }
+}
+html[data-theme='light']{
+  #outer-container{
+    background-color: #090c37;
+    
+  }
+  #page-wrap{
+    background-color: white;
+  }
+
 }
 
 .service{

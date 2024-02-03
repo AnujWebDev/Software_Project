@@ -2,8 +2,8 @@ import React from "react";
 import { ImMail3 } from "react-icons/im";
 import { VscCallIncoming } from "react-icons/vsc";
 import lets from "../assets/lets.png";
-import img1 from "../assets/img1.png"
-import img2 from "../assets/img2.png"
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
 
 const Far = () => {
   return (
@@ -23,13 +23,14 @@ const Far = () => {
           data-aos-easing="ease-in-sine"
           className="text-base md:text-lg py-6"
         >
-          “As a provider of tech-enabled digital marketing solutions, Cypher
-          Squad develops unique plans for each of its clients in accordance with
-          their requirements and objectives. Our passions are the web and
-          assisting companies in achieving their objectives. As a result, if you
-          choose us as your digital marketing firm, you won't get a pre-made
-          approach; instead, you'll get a unique strategy that is tailored to
-          your business, your needs, and your objectives.
+          “Leading provider of technology-driven digital marketing solutions, we
+          take pride in crafting customized strategies for our clients based on
+          their specific requirements and goals. Our expertise lies in
+          harnessing the power of the web to help businesses achieve their
+          objectives. When you choose us as your digital marketing partner, you
+          can expect a personalized approach that is tailored to your unique
+          business needs and objectives. With us, you won't get a cookie-cutter
+          solution, but rather a bespoke strategy crafted just for you."
         </p>
         <div className="flex flex-col md:flex-row">
           <p

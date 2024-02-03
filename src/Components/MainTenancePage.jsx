@@ -3,6 +3,7 @@ import DefaultNavbar from './DefaultNavbar';
 import Maintenance from '../pages/Maintenance';
 import Far from '../pages/Far';
 import MaintenanceService from '../pages/MaintenanceServices';
+import Footer from '../pages/Footer';
 
 
 const MainTenancePage = () => {
@@ -19,6 +20,7 @@ const MainTenancePage = () => {
         <Maintenance/>
         <MaintenanceService/>
         <Far/>
+        <Footer/>
           </div>
       </div>
   )

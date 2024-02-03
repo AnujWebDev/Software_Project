@@ -36,9 +36,8 @@ const About = () => {
           }}
           className="text-2xl font-bold"
         >
-          We Assist You In Achieving
-          <br />
-          Your Digital Business Objectives
+          We Help You Achieve Your
+          <br /> Digital Business Goals
         </h1>
         <div className=" container mt-20 w-full lg:w-[1200px] mx-auto">
           <p
@@ -47,11 +46,11 @@ const About = () => {
             }}
             className="py-6 text-2xl"
           >
-            Your brand's credibility and recognition can soar with the right
-            team. Get in touch with leading experts in SEO, app design, web
-            development, social media marketing, and other fields. When it comes
-            to value and results, Cypher Squad always excels. Take out the bad
-            and emphasize the good.
+            Elevate your brand's credibility and recognition with our expert
+            team. Connect with industry-leading professionals in SEO, app
+            design, web development, social media marketing, and more. When it
+            comes to delivering value and achieving results, We are unmatched.
+            We eliminate the negatives and emphasize the positives.
           </p>
         </div>
       </div>
@@ -79,10 +78,11 @@ const About = () => {
               }}
               className="p-6 mt-12 text-2xl"
             >
-              To create creative and original strategies for our clients that
-              produce results, we draw on our special talents and creativity. As
-              a result, our clients reach new levels of achievement and success,
-              opening up opportunities for them to enhance their enterprises.
+              Our core values revolve around creating innovative and bespoke
+              strategies for our clients that drive tangible results. By
+              leveraging our unique talents and creativity, we enable our
+              clients to reach new levels of success and unlock opportunities
+              for business growth.
             </p>
           </div>
         </div>
@@ -99,16 +99,18 @@ const About = () => {
               }}
               className="p-6 mt-12 text-2xl"
             >
-              In everything we do, we try to uphold the highest standards of
-              originality. We always push ourselves to do better and make
-              progress as we strive to move forward to the next big thing.
+              We consistently uphold the highest standards of originality in
+              everything we do. Continually pushing ourselves to improve and
+              strive for the next big thing drives our progress.
             </p>
           </div>
           <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
-            <div data-aos="fade-left"
+            <div
+              data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-easing="ease-in-sine">
-            <img src={ab2} className="rotate-infinite" alt="ab"></img>
+              data-aos-easing="ease-in-sine"
+            >
+              <img src={ab2} className="rotate-infinite" alt="ab"></img>
             </div>
           </div>
         </div>
@@ -117,26 +119,28 @@ const About = () => {
       <div className="lg:w-full mx-auto hover:bg-gradient-to-r from-teal-800 to-orange-600 hover:text-white">
         <div className="flex flex-col lg:flex-row container p-10 my-10">
           <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
-            <div data-aos="fade-right"
+            <div
+              data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-easing="ease-in-sine">
-            <img src={ab3} className="rotate-infinite" alt="ab"></img>
+              data-aos-easing="ease-in-sine"
+            >
+              <img src={ab3} className="rotate-infinite" alt="ab"></img>
             </div>
           </div>
           <div className="w-full lg:w-1/2">
-            <p 
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
+            <p
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
               className="p-6 mt-12 text-2xl"
             >
-              We carefully strike a balance between preparation and execution.
-              Planning and creativity are all balanced by our team's
-              perseverance. We not only maintain balance but also act correctly
-              and effectively for the benefit of our clients and business.
+              We strike a careful balance between planning and execution. Our
+              team combines meticulous preparation with creative flair, ensuring
+              that we not only maintain equilibrium but also act in the best
+              interest of our clients and their businesses.
             </p>
           </div>
         </div>
@@ -153,17 +157,19 @@ const About = () => {
               }}
               className="p-6 mt-12 text-2xl"
             >
-              We take a proactive stance when it comes to new technologies and
-              methods. Looking for every window of fresh possibility, we've
-              helped clients surpass the competition and create outcomes that
-              exceeded their initial goals.
+              We have a proactive approach to embracing new technologies and
+              methodologies. By constantly seeking fresh possibilities, we have
+              helped our clients surpass their competition and achieve results
+              that exceed their initial goals.
             </p>
           </div>
           <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
-            <div data-aos="fade-left"
+            <div
+              data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-easing="ease-in-sine" >
-            <img src={ab4} className="rotate-infinite" alt="ab"></img>
+              data-aos-easing="ease-in-sine"
+            >
+              <img src={ab4} className="rotate-infinite" alt="ab"></img>
             </div>
           </div>
         </div>
@@ -171,25 +177,27 @@ const About = () => {
       <div className="lg:w-full mx-auto hover:bg-gradient-to-r from-teal-800 to-orange-600 hover:text-white">
         <div className="flex flex-col lg:flex-row container p-10 my-10">
           <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
-            <div data-aos="fade-right"
+            <div
+              data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-easing="ease-in-sine">
-            <img src={ab5} className="rotate-infinite" alt="ab"></img>
+              data-aos-easing="ease-in-sine"
+            >
+              <img src={ab5} className="rotate-infinite" alt="ab"></img>
             </div>
           </div>
           <div className="w-full lg:w-1/2">
             <p
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
               className="p-6 mt-12 text-2xl"
             >
-              “Innovation is the unrelenting drive to break the status quo and
-              develop anew where few have dared to go.“ We create solutions to
-              empower business growth.
+              “Innovation is the relentless drive to challenge the status quo
+              and pioneer new paths where few have ventured before." We create
+              solutions that empower business growth.
             </p>
           </div>
         </div>
@@ -206,17 +214,20 @@ const About = () => {
               }}
               className="p-6 mt-12 text-2xl"
             >
-              We are aware that nobody, not even businesses, escapes difficulty
-              in life. But because we're dedicated to having a growth and
-              commitment mentality, we see these difficulties as an opportunity
-              to advance. We select a constructive answer in every circumstance.
+              We understand that challenges are inevitable for everyone,
+              including businesses. However, we embrace a growth mindset and a
+              commitment to turning difficulties into opportunities for
+              advancement. In every situation, we choose a constructive
+              response.
             </p>
           </div>
           <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
-            <div data-aos="fade-left"
+            <div
+              data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-easing="ease-in-sine" >
-            <img src={ab6} className="rotate-infinite" alt="ab"></img>
+              data-aos-easing="ease-in-sine"
+            >
+              <img src={ab6} className="rotate-infinite" alt="ab"></img>
             </div>
           </div>
         </div>

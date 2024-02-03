@@ -5,7 +5,6 @@ import { TiArrowForward } from "react-icons/ti";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
 const Home = () => {
   const responsive = {
     superLargeDesktop: {
@@ -32,7 +31,6 @@ const Home = () => {
       <div className="hero1 overflow-hidden min-h-screen container mx-auto pt-20">
         <div className=" pt-10 flex flex-col md:flex-row">
           <div className="hero-content w-full md:w-1/2 pt-20 md:pt-20 text-center">
-            
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
@@ -42,12 +40,11 @@ const Home = () => {
                 style={{
                   fontFamily: "PT Sans, sans-serif",
                   letterSpacing: "0px",
-          
                 }}
                 className="py-6 text-left italic text-2xl"
               >
-                Creating new dimensions in next-gen technologies by providing
-                solutions that match your Business Goals.
+                Enhancing the potential of next-generation technology by
+                offering solutions that align with your business objectives.
               </p>
               <h1 className="text-6xl text-left">
                 We are passionate about
@@ -56,30 +53,21 @@ const Home = () => {
                   style={{
                     fontFamily: "PT Sans, sans-serif",
                     letterSpacing: "3px",
-                    
                   }}
                   className="mt-20 font-extrabold text-4xl"
                 >
                   <TypeAnimation
                     sequence={[
-                      "conversion rate optimization.",
+                      "Fostering creativity.",
                       1000,
-                      "digital marketing.",
-                      1000,
-                      "establishing brand presence.",
-                      1000,
-                      "custom software development.",
-                      1000,
-                      "thought leadership.",
-                      1000,
-                      "fostering creativity.",
+                      "Creating solutions for your business",
                       1000,
                     ]}
                     repeat={Infinity}
                   />
                 </span>
               </h1>
-              
+
               <div className="flex mt-10  justify-left">
                 <button
                   style={{
@@ -109,20 +97,29 @@ const Home = () => {
             Design, build and maintain products
           </p>
 
-          <p style={{ fontFamily: "PT Sans, sans-serif" }} className="text-xl text-center mt-10">
-            We work with clients starting out and starting over. We believe in
-            producing creative that captures hearts, inspires minds and delivers
-            business results. We’ve built our business organically – through
-            recommendations, word of mouth and working in partnership with our
-            clients over the years.
+          <p
+            style={{ fontFamily: "PT Sans, sans-serif" }}
+            className="text-xl text-center mt-10"
+          >
+            We assist clients who are just getting started. We are committed to
+            creating work that moves people emotionally, stimulates the
+            intellect, and generates revenue. Through recommendations,
+            word-of-mouth, and years of collaborative work with our clients, we
+            have naturally grown our business.
           </p>
-          <p style={{ fontFamily: "PT Sans, sans-serif" }} className="text-xl text-center mt-5">
-            Everything we create – from brand and marketing strategy to creative
-            executions and digital experiences –<br /> is designed to give your
-            brand a distinctive edge in your market.
+          <p
+            style={{ fontFamily: "PT Sans, sans-serif" }}
+            className="text-xl text-center mt-5"
+          >
+            Everything we produce is intended to provide your company a unique
+            advantage in your industry, from creative executions and digital
+            experiences to brand and marketing strategies.
           </p>
-          <p style={{ fontFamily: "PT Sans, sans-serif" }} className="text-xl text-center py-10">
-            Because creativity is the most unfair commercial advantage.
+          <p
+            style={{ fontFamily: "PT Sans, sans-serif" }}
+            className="text-xl text-center py-10"
+          >
+            Considering that the most unfair commercial advantage is inventiveness.
           </p>
         </div>
         {/* <div
@@ -162,7 +159,6 @@ const Home = () => {
           </Carousel>
         </div> */}
       </div>
-     
     </>
   );
 };

@@ -18,6 +18,7 @@ const ConsultrationPage = () => {
         <Consultation/>
         <ConsultationService/>
         <Far />
+        <Footer/>
       </div>
     </div>
   )
