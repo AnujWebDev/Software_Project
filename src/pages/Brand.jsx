@@ -60,7 +60,7 @@ const Brand = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 lg:py-6 ml-0 lg:ml-20 flex italic text-xl"
+          className="py-14 lg:py-6 ml-0 lg:ml-20 font-bodyFont flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -75,7 +75,7 @@ const Brand = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl ml-0 lg:ml-20 font-bold"
+              className="text-2xl font-bodyFont mt-20 ml-0 lg:ml-20 font-bold"
             >
              Branding And Design
             </h1>
@@ -86,9 +86,9 @@ const Brand = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 ml-0 lg:ml-20 text-2xl"
+              className="py-6 ml-0 lg:ml-20  text-2xl"
             >
-             Convert simple ideas into a brand identity to elevate<br/> your business
+             Convert simple ideas into a brand identity to elevate your business
             </p>
           </div>
           <div className="w-full sm:w-1/2 bg-white p-2 flex justify-center">
@@ -109,7 +109,7 @@ const Brand = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 ml-20 text-2xl"
+              className="py-6 ml-20 mb-20 text-2xl"
             >
               Making your business a lasting digital success isn't easy. Our full-services digital team can design and fuel your full-fledged difital marketing plans.
             </p>
@@ -121,11 +121,10 @@ const Brand = () => {
             data-aos-easing="ease-in-sine"
               style={{
                 fontSize: "45px",
-                fontFamily: "PT Sans, sans-serif",
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl mt-8 font-bold"
+              className="text-2xl mt-8 font-bodyFont font-bold"
             >
               HOW WE WORK
             </h1>
@@ -136,7 +135,7 @@ const Brand = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="w-full"
+          className="w-[1200px] mx-auto"
         >
           <Swiper
             className="p-4"

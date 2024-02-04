@@ -63,7 +63,7 @@ const Digital = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 lg:py-6 ml-0 lg:ml-20 flex italic text-xl"
+          className="py-14 font-bodyFont lg:py-6 ml-0 lg:ml-20 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -78,7 +78,7 @@ const Digital = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl ml-0 lg:ml-20 font-bold"
+              className="text-2xl font-bodyFont mt-20 ml-0 lg:ml-20 font-bold"
             >
               Digital Marketing
             </h1>
@@ -89,10 +89,10 @@ const Digital = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 lg:ml-20 text-2xl"
+              className="py-6 font-bodyFont lg:ml-20 text-2xl"
             >
               Drive result-oriented digital plans that match your unique
-              <br /> business needs.
+               business needs.
             </p>
           </div>
           <div className="w-full sm:w-1/2 bg-white p-2 flex justify-center">
@@ -114,7 +114,7 @@ const Digital = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 ml-0 lg:ml-20 text-2xl"
+              className="py-6 font-bodyFont ml-0 mb-20 lg:ml-20 text-2xl"
             >
               Making your business a lasting digital success isn’t easy. Our
               full-services digital team can design and fuel your full-fledged
@@ -130,11 +130,10 @@ const Digital = () => {
               data-aos-easing="ease-in-sine"
               style={{
                 fontSize: "45px",
-                fontFamily: "PT Sans, sans-serif",
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl mt-16 font-bold"
+              className="text-2xl font-bodyFont mt-16 font-bold"
             >
               HOW WE WORK
             </h1>
@@ -145,7 +144,7 @@ const Digital = () => {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-easing="ease-in-sine"
-        className="w-full"
+        className=" w-[1200px] container mx-auto"
       >
         <Swiper
           className="p-4"
@@ -178,7 +177,7 @@ const Digital = () => {
                 style={{ height: "400px", boxSizing: "border-box" }}
               >
                 <div className="max-w-md  rounded-xl relative">
-                  <div className="text-xl text font-bold text-white absolute top-4 left-4">
+                  <div className="text-xl font-bodyFont text font-bold text-white absolute top-4 left-4">
                     {String(service.id).padStart(2, "0")}
                   </div>
                   <div
@@ -193,11 +192,11 @@ const Digital = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className=" text text-white pt-32 p-5 text-2xl"
+                      className=" text font-bodyFont  text-white pt-40 p-5 text-2xl"
                     >
                       {service.title}
                     </p>
-                    <p className="text text-white p-5">{service.description}</p>
+                    <p className="text font-bodyFont text-white p-5">{service.description}</p>
                   </div>
                 </div>
               </div>

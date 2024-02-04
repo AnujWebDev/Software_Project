@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { scaleDown as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import {
+  FaHome,
+  FaPhoneSquareAlt,
+  FaEnvelopeOpenText,
+  FaLinkedin,
+  FaFacebook,
+  FaTwitterSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
 
 const DefaultMenu = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -79,28 +88,31 @@ const DefaultMenu = () => {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            gap: "50px",
+            gap:'10px'
           }}
         >
           <Link
             to={"/"}
-            className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform hover:text-primary hover:scale-90"
+            style={{letterSpacing:'2px'}}
+            className=" font-bodyFont hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform hover:text-primary hover:scale-90"
             onClick={closeNavbar}
           >
             HOME
           </Link>
           <Link
             to={"/about"}
-            className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90"
+            style={{letterSpacing:'2px'}}
+            className=" font-bodyFont  hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90"
           >
             ABOUT US
           </Link>
-          <Link to={'/portofolio'} className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90">
+          <Link to={'/portofolio'} style={{letterSpacing:'2px'}} className=" font-bodyFont  hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90">
             PORTFOLIO
           </Link>
           <div className="relative inline-block">
             <Link
-              className="p-2 flex justify-center hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90"
+              style={{letterSpacing:'2px'}}
+              className="flex font-bodyFont hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90"
               onClick={toggleDropdown}
             >
               SERVICES <MdOutlineArrowDropDown className="ml-2 text-2xl" />
@@ -108,58 +120,86 @@ const DefaultMenu = () => {
 
             {isDropdownOpen && (
               <div className=" flex flex-col">
-                <Link to={"/appdev"} className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
+                <Link to={"/appdev"} style={{letterSpacing:'2px'}} className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
                   APP DEVELOPMENT
                 </Link>
                 <Link
                   to={"/webdev"}
-                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90"
+                  style={{letterSpacing:'2px'}}
+                  className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90"
                 >
                   WEBSITE DEVELOPMENT
                 </Link>
                 <Link
                   to={"/brand"}
-                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                  style={{letterSpacing:'2px'}}
+                  className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   BRANDING & DESIGN
                 </Link>
                 <Link
                   to={"/consultation"}
-                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                  style={{letterSpacing:'2px'}}
+                  className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   CONSULTATION
                 </Link>
                 <Link
                   to={"/digital"}
-                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                  style={{letterSpacing:'2px'}}
+                  className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   DIGITAL MARKETING
                 </Link>
                 <Link
                   to={"/devops"}
-                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                  style={{letterSpacing:'2px'}}
+                  className=" ml-10 font-bodyFont text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   DEVOPS
                 </Link>
                 <Link
                   to={"/retainers"}
-                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                  style={{letterSpacing:'2px'}}
+                  className=" ml-10 font-bodyFont text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   RETAINERS
                 </Link>
                 <Link
                   to={"/maintenance"}
-                  className="p-2 ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
+                  style={{letterSpacing:'2px'}}
+                  className=" ml-10 font-bodyFont text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   MAINTENANCE
                 </Link>
               </div>
             )}
           </div>
-          <Link to={'/contact'} className="p-2 hover:cursor-pointer text-white w-full rounded transition duration-500 text-center ease-in-out transform  hover:text-primary hover:scale-90">
+          <Link to={'/contact'} style={{letterSpacing:'2px'}} className=" font-bodyFont hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90">
             CONTACT
           </Link>
         </div>
+        <div style={{display:'flex'}} className="flex  gap-4 mt-5">
+              <Link>
+                <FaLinkedin className="text-3xl hover:text-red-500 hover:rotate-45 transition duration-300" />
+              </Link>
+              <Link>
+                <FaFacebook className="text-3xl hover:text-white hover:rotate-45 hover:bg-[#0d6efd] transition duration-300" />
+              </Link>
+              <Link>
+                <FaTwitterSquare className="text-3xl hover:text-white hover:rotate-45 hover:bg-[#0d6efd] transition duration-300" />
+              </Link>
+              <Link>
+                <FaInstagramSquare className="text-3xl hover:text-red-500 hover:rotate-45 transition duration-300" />
+              </Link>
+            </div>
+            <p style={{display:'flex'}} className=" font-bodyFont text-sm mt-10 hover:text-red-500  lg:mb-0">
+              <FaPhoneSquareAlt className="text-2xl mr-2" />+91-880-021-3778
+            </p>
+            <p style={{display:'flex'}} className=" font-bodyFont my-5 text-sm flex hover:text-red-500 lg:mb-0">
+              <FaEnvelopeOpenText className="text-2xl  mr-2" />
+              info@cypher-squad.com
+            </p>
       </Menu>
     </div>
   );

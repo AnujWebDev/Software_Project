@@ -200,12 +200,11 @@ const Portfolio = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
             style={{
-              fontFamily: "PT Sans, sans-serif",
               letterSpacing: "3px",
               fontSize: "30px",
               fontWeight: "bold",
             }}
-            className="py-14 lg:py-6 flex italic m-20 text-xl relative"
+            className="py-14 font-bodyFont lg:py-6 flex italic m-20 text-xl relative"
           >
             Portfolio <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
           </p>
@@ -220,7 +219,7 @@ const Portfolio = () => {
                   fontWeight: "bold",
                   lineHeight: "60px",
                 }}
-                className="lg:ml-20 font-bold p-4 rounded-lg text-left"
+                className="lg:ml-20 font-bodyFont font-bold p-4 rounded-lg text-left"
               >
                 Mobile App And Web Development Portfolio
               </h1>
@@ -232,7 +231,7 @@ const Portfolio = () => {
                 style={{
                   fontFamily: "PT Sans, sans-serif",
                 }}
-                className="py-6 lg:ml-20 text-2xl p-4 rounded-lg "
+                className="py-6 lg:ml-20 font-bodyFont text-2xl p-4 rounded-lg "
               >
                 Get your project done!
                 <br />
@@ -245,34 +244,27 @@ const Portfolio = () => {
       <div className="lg:ml-20  p-4 text-center">
       <div className="flex mx-auto justify-center">
       <button
-        style={{
-          fontFamily: "PT Sans, sans-serif",
-        }}
+
         className={`${
           activeButton === 1 ? 'bg-primary text-white' : 'bg-white'
-        } w-[150px] p-3 mx-5 hover:bg-primary rounded-full border hover:text-white text-black transition ease-in-out duration-[0.3s] font-bold py-2 px-4`}
+        } w-[150px] p-3 mx-5 hover:bg-primary font-bodyFont rounded-full border hover:text-white text-black transition ease-in-out duration-[0.3s] font-bold py-2 px-4`}
         onClick={() => handleButtonClick(1)}
       >
         Live project
       </button>
       <button
-        style={{
-          fontFamily: "PT Sans, sans-serif",
-        }}
         className={`${
           activeButton === 2 ? 'bg-primary text-white' : 'bg-white'
-        } w-[150px] p-3 mx-5 hover:bg-primary rounded-full border hover:text-white text-black transition ease-in-out duration-[0.3s] font-bold py-2 px-4`}
+        } w-[150px] p-3 mx-5 hover:bg-primary font-bodyFont rounded-full border hover:text-white text-black transition ease-in-out duration-[0.3s] font-bold py-2 px-4`}
         onClick={() => handleButtonClick(2)}
       >
         Demo project
       </button>
       <button
-      style={{
-        fontFamily: "PT Sans, sans-serif",
-      }}
+
         className={`${
           activeButton === 3 ? 'bg-primary text-white' : 'bg-white'
-        } w-[200px] p-3 mx-5 hover:bg-primary rounded-full border hover:text-white text-black transition ease-in-out duration-[0.3s] font-bold py-2 px-4`}
+        } w-[200px] p-3 mx-5 hover:bg-primary font-bodyFont rounded-full border hover:text-white text-black transition ease-in-out duration-[0.3s] font-bold py-2 px-4`}
         onClick={() => handleButtonClick(3)}
       >
         Upcoming Project

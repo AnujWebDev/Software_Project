@@ -75,7 +75,7 @@ const Technologies = () => {
         </div>
       </div>
 
-      <div className="  ml-0 mt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-5">
+      <div className="  ml-20 mt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-5">
         <div className="rounded-full lg:relative lg:right-16 relative right-4 p-2 border w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-red-500 hover:bg-gray-500">
           <TfiLinkedin className=" text-white rounded-2xl p-2 mt-5 text-6xl hover:rotate-45 transition ease-in-out duration-300 " />
         </div>
@@ -94,7 +94,7 @@ const Technologies = () => {
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
-            className="text-black lg:relative lg:left-[-70px] relative left-24  my-10 text font-bold"
+            className="text-black font-bodyFont lg:relative lg:left-[-70px] relative left-24  my-10 text font-bold"
           >
             Technologies
             <br /> we use
@@ -129,7 +129,7 @@ const Technologies = () => {
           <TbBrandAzure className=" bg-blue-500 text-white rounded-3xl text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:text-white  hover:bg-gray-500" />
         </div>
         </div>
-        <div className=" container mt-5 ml-0 lg:ml-20  overflow-hidden grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className=" container mt-5 ml-0  overflow-hidden grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-5">
         <div className=" rounded-full p-2 lg:relative lg:left-20 left-0 relative right-2  border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
           <TbBrandAzure className=" bg-blue-500 text-white rounded-3xl text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:text-white  hover:bg-gray-500" />
         </div>

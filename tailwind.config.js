@@ -10,6 +10,9 @@ export default {
       colors: {
         primary: "#FFA500",
       },
+      fontFamily:{
+        'bodyFont':['toledo']
+      }
     },
   },
   plugins: [require("daisyui")],

@@ -73,7 +73,7 @@ const ConsultationService = () => {
               fontFamily: "PT Sans, sans-serif",
               letterSpacing: "1px",
             }}
-            className=" lg:mt-28 text-white font-bold text-4xl"
+            className=" lg:mt-28 font-bodyFont text-white font-bold text-4xl"
           >
             OUR CONSULTATION SERVICES
           </h1>
@@ -84,7 +84,7 @@ const ConsultationService = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className=" text-white text-2xl"
+              className=" text-white font-bodyFont text-2xl"
             >
            See deep technological expertise join with best-in-class consultancy solutions that are universal, people-centric, and result-oriented to match your business need. 
             </p>
@@ -123,7 +123,7 @@ const ConsultationService = () => {
               <SwiperSlide key={service.id}>
                 <div className="flex justify-center pb-2 mb-5" style={{ height: '400px',boxSizing:'border-box' }}>
                   <div className="max-w-md card bg-white p-8  shadow-md relative">
-                    <div className="text-xl text font-bold text-black absolute top-4 left-4">
+                    <div className="text-xl text font-bodyFont font-bold text-black absolute top-4 left-4">
                       {String(service.id).padStart(2, "0")}
                     </div>
                     <div className="flex justify-center">
@@ -138,11 +138,11 @@ const ConsultationService = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className="text-center text text-black mt-5 text-2xl"
+                      className="text-center font-bodyFont text text-black mt-5 text-2xl"
                     >
                       {service.title}
                     </p>
-                    <p className="text text-black mt-4">{service.description}</p>
+                    <p className="text font-bodyFont text-black mt-4">{service.description}</p>
                   </div>
                 </div>
               </SwiperSlide>

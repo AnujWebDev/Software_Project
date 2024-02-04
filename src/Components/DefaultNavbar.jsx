@@ -40,7 +40,7 @@ const DefaultNavbar = () => {
       scrolling ? "bg-white" : "" 
     }`}>
       <div className="flex-1">
-        <Link to={'/'} className="text-2xl font-bold">Cypher Squad</Link>
+        <Link to={'/'} className="text-2xl relative left-20 font-bold">Cypher Squad</Link>
       </div>
       <div className="flex-none mr-20">
         <label className="swap swap-rotate">

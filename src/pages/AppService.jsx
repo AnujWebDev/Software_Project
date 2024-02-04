@@ -73,7 +73,7 @@ const AppService = () => {
               fontFamily: "PT Sans, sans-serif",
               letterSpacing: "1px",
             }}
-            className=" my-1 lg:mt-48 text-white font-bold text-4xl"
+            className=" my-1 lg:mt-48 font-bodyFont text-white font-bold text-4xl"
           >
             OUR SERVICES
           </h1>
@@ -81,10 +81,8 @@ const AppService = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className=" text-white text-2xl"
+
+              className=" text-white font-bodyFont text-2xl"
             >
               Go for result-driven web, desktop, and mobile apps that can take your business to the next level. 
             </p>
@@ -116,13 +114,13 @@ const AppService = () => {
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
           >
             {servicesData.map((service) => (
               <SwiperSlide key={service.id}>
                 <div className="flex justify-center pb-2 mb-5" style={{ height: '400px',boxSizing:'border-box' }}>
-                  <div className="max-w-md card bg-white p-8  shadow-md relative">
+                  <div className="max-w-md card font-bodyFont bg-white p-8  shadow-md relative">
                     <div className="text-xl text font-bold text-black absolute top-4 left-4">
                       {String(service.id).padStart(2, "0")}
                     </div>
@@ -138,11 +136,11 @@ const AppService = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className="text-center text text-black mt-5 text-2xl"
+                      className="text-center text font-bodyFont text-black mt-5 text-2xl"
                     >
                       {service.title}
                     </p>
-                    <p className="text text-black mt-4">{service.description}</p>
+                    <p className="text text-black font-bodyFont mt-4">{service.description}</p>
                   </div>
                 </div>
               </SwiperSlide>

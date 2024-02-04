@@ -13,7 +13,8 @@ const Far = () => {
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-easing="ease-in-sine"
-          className="text-3xl md:text-3xl p-20 lg:text-5xl font-bold py-6"
+          style={{whiteSpace:'nowrap'}}
+          className="text-3xl font-bodyFont md:text-3xl p-20 lg:text-6xl font-extrabold py-6"
         >
           You've made it this far......
         </h1>
@@ -21,7 +22,7 @@ const Far = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="text-base md:text-lg p-20 py-6"
+          className="text-base font-bodyFont md:text-lg p-20 py-6"
         >
           “Leading provider of technology-driven digital marketing solutions, we
           take pride in crafting customized strategies for our clients based on
@@ -37,16 +38,18 @@ const Far = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-            className="flex hover:text-red-500 ml-16 transition ease-in-out duration-[#0.3s] items-center text-base md:text-2xl"
+            style={{whiteSpace:'nowrap'}}
+            className="flex hover:text-red-500 font-bodyFont ml-16 transition ease-in-out duration-[#0.3s] items-center text-base md:text-2xl"
           >
-            <ImMail3 className="text-4xl md:text-4xl  mx-2 md:mx-5" />
+            <ImMail3 className="text-4xl  md:text-4xl  mx-2 md:mx-5" />
             info@cypher-squad.com
           </p>
           <p
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-            className="flex hover:text-red-500 transition ease-in-out duration-[#0.3s]x   items-center text-base md:text-2xl mt-4 md:mt-0 md:ml-6"
+            style={{whiteSpace:'nowrap'}}
+            className="flex hover:text-red-500 font-bodyFont transition ease-in-out duration-[#0.3s]x   items-center text-base md:text-2xl mt-4 md:mt-0 md:ml-6"
           >
             <VscCallIncoming className="text-4xl  md:text-4xl  mx-2 md:mx-5" />
             +91-880-021-3778

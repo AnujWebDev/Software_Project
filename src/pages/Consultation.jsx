@@ -49,12 +49,11 @@ const Consultation = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-sine"
           style={{
-            fontFamily: "PT Sans, sans-serif",
             letterSpacing: "3px",
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 ml-20 lg:py-6 flex italic text-xl"
+          className="py-14 ml-20 font-bodyFont lg:py-6 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -69,7 +68,7 @@ const Consultation = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl ml-0 lg:ml-20 font-bold"
+              className="text-2xl font-bodyFont ml-0 mt-20 lg:ml-20 font-bold"
             >
               Service Consultation
             </h1>
@@ -80,9 +79,9 @@ const Consultation = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 ml-0 lg:ml-20 text-2xl"
+              className="py-6 ml-0 lg:ml-20 font-bodyFont  text-2xl"
             >
-              Match technology & business goals to accelerate growth<br/>in the digital age
+              Match technology & business goals to accelerate growth in the digital age
 
 
             </p>
@@ -105,9 +104,9 @@ const Consultation = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 ml-0 lg:ml-12 text-2xl"
+              className="py-6 ml-0 font-bodyFont mb-20 lg:ml-12 text-2xl"
             >
-              From end-to-end transformation solutions to specific project <br/> initiatives,we drive the change your business needs.
+              From end-to-end transformation solutions to specific project initiatives,we drive the change your business needs.
             </p>
           </div>
           <div className="w-full sm:w-1/2 flex justify-center">
@@ -132,7 +131,7 @@ const Consultation = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="w-full"
+          className="w-[1200px] mx-auto"
         >
           <Swiper
             className="p-4"
@@ -162,7 +161,7 @@ const Consultation = () => {
               <SwiperSlide key={service.id}>
                 <div className="flex justify-center rounded-xl box mb-5" style={{ height: '400px',boxSizing:'border-box' }}>
                   <div className="max-w-md  rounded-xl relative">
-                    <div className="text-xl text font-bold text-white absolute top-4 left-4">
+                    <div className="text-xl font-bodyFont text font-bold text-white absolute top-4 left-4">
                       {String(service.id).padStart(2, "0")}
                     </div>
                     <div style={{clipPath: "polygon(0 23%, 100% 43%, 100% 100%, 0% 100%)",boxSizing:'border-box'}} className=" hover:bg-teal-950 transition duration-[0.3s] ease-in-out rounded-xl h-full">
@@ -171,11 +170,11 @@ const Consultation = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className=" text text-white pt-32 p-5 text-2xl"
+                      className=" text font-bodyFont text-white pt-32 p-5 text-2xl"
                     >
                       {service.title}
                     </p>
-                    <p className="text text-white p-5">{service.description}</p>
+                    <p className="text font-bodyFont text-white p-5">{service.description}</p>
                   </div>
                   </div>
                 </div>

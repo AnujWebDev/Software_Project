@@ -19,12 +19,11 @@ const About = () => {
       >
         <p
           style={{
-            fontFamily: "PT Sans, sans-serif",
             letterSpacing: "3px",
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-6  ml-0 lg:ml-20 flex italic text-xl"
+          className="py-6  font-bodyFont ml-0 lg:ml-20 flex italic text-xl"
         >
           About <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -34,16 +33,13 @@ const About = () => {
             fontWeight: "bold",
             lineHeight: "80px",
           }}
-          className="text-2xl ml-0 lg:ml-20 font-bold"
+          className="text-2xl font-bodyFont ml-0 lg:ml-20 font-bold"
         >
           We Help You Achieve Your
           <br /> Digital Business Goals
         </h1>
         <p
-            style={{
-              fontFamily: "PT Sans, sans-serif",
-            }}
-            className="py-6 ml-0 lg:ml-20 mt-20 text-gray-500 text-2xl"
+            className="py-6 ml-0 font-bodyFont lg:ml-20 mt-20 text-gray-500 text-2xl"
           >
             Elevate your brand's credibility and recognition with our expert
             team. Connect with industry-leading professionals in SEO, app
@@ -56,7 +52,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-20">
-        <h1 className="text-4xl text-center font-extrabold">OUR CORE VALUES</h1>
+        <h1 className="text-6xl text-center font-bodyFont font-extrabold">OUR CORE VALUES</h1>
       </div>
       <div className="lg:w-full mx-auto hover:bg-gradient-to-r from-teal-800 to-orange-600 hover:text-white">
         <div className="flex flex-col lg:flex-row container p-10 my-10">
@@ -74,10 +70,8 @@ const About = () => {
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="p-6 mt-12 text-2xl"
+
+              className="p-6 mt-12 font-bodyFont text-2xl"
             >
               Our core values revolve around creating innovative and bespoke
               strategies for our clients that drive tangible results. By
@@ -95,10 +89,7 @@ const About = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="p-6 mt-12 text-2xl"
+              className="p-6 mt-12 font-bodyFont text-2xl"
             >
               We consistently uphold the highest standards of originality in
               everything we do. Continually pushing ourselves to improve and
@@ -133,10 +124,7 @@ const About = () => {
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="p-6 mt-12 text-2xl"
+              className="p-6 mt-12 font-bodyFont text-2xl"
             >
               We strike a careful balance between planning and execution. Our
               team combines meticulous preparation with creative flair, ensuring
@@ -153,10 +141,8 @@ const About = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="p-6 mt-12 text-2xl"
+
+              className="p-6 mt-12 font-bodyFont text-2xl"
             >
               We have a proactive approach to embracing new technologies and
               methodologies. By constantly seeking fresh possibilities, we have
@@ -191,10 +177,8 @@ const About = () => {
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="p-6 mt-12 text-2xl"
+  
+              className="p-6 mt-12 font-bodyFont text-2xl"
             >
               “Innovation is the relentless drive to challenge the status quo
               and pioneer new paths where few have ventured before." We create
@@ -210,10 +194,7 @@ const About = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="p-6 mt-12 text-2xl"
+              className="p-6 mt-12 font-bodyFont text-2xl"
             >
               We understand that challenges are inevitable for everyone,
               including businesses. However, we embrace a growth mindset and a

@@ -48,10 +48,9 @@ const RetainersServices = () => {
         >
           <h1
             style={{
-              fontFamily: "PT Sans, sans-serif",
               letterSpacing: "1px",
             }}
-            className=" lg:mt-40 text-white font-bold text-4xl"
+            className=" font-bodyFont lg:mt-40 text-white font-bold text-4xl"
           >
             OUR SERVICES
           </h1>
@@ -59,10 +58,7 @@ const RetainersServices = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className=" text-white text-2xl"
+              className=" text-white font-bodyFont text-2xl"
             >
               Get retainer care plans with fast and hassle-free maintenance to keep all elements of your development structure up to date. 
             </p>
@@ -101,7 +97,7 @@ const RetainersServices = () => {
               <SwiperSlide key={service.id}>
                 <div className="flex justify-center pb-2 mb-5" style={{ height: '400px',boxSizing:'border-box' }}>
                   <div className="max-w-md card bg-white p-8  shadow-md relative">
-                    <div className="text-xl text font-bold text-black absolute top-4 left-4">
+                    <div className="text-xl font-bodyFont text font-bold text-black absolute top-4 left-4">
                       {String(service.id).padStart(2, "0")}
                     </div>
                     <div className="flex justify-center">
@@ -113,14 +109,14 @@ const RetainersServices = () => {
                     </div>
                     <p
                       style={{
-                        fontFamily: "PT Sans, sans-serif",
+
                         letterSpacing: "1px",
                       }}
-                      className="text-center text text-black mt-5 text-2xl"
+                      className="text-center font-bodyFont text text-black mt-5 text-2xl"
                     >
                       {service.title}
                     </p>
-                    <p className="text text-black mt-4">{service.description}</p>
+                    <p className="text font-bodyFont text-black mt-4">{service.description}</p>
                   </div>
                 </div>
               </SwiperSlide>

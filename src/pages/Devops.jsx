@@ -54,7 +54,7 @@ const Devops = () => {
             fontSize: "30px",
             fontWeight: "bold",
           }}
-          className="py-14 ml-0 lg:ml-20  lg:py-6 flex italic text-xl"
+          className="py-14 ml-0 lg:ml-20 font-bodyFont  lg:py-6 flex italic text-xl"
         >
           Service <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
         </p>
@@ -69,7 +69,7 @@ const Devops = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl ml-0 lg:ml-20 font-bold"
+              className="text-2xl font-bodyFont ml-0 lg:ml-20 font-bold"
             >
               DevOps Services
             </h1>
@@ -77,12 +77,9 @@ const Devops = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="py-6 ml-0 lg:ml-20 text-2xl"
+              className="py-6 ml-0 font-bodyFont lg:ml-20 text-2xl"
             >
-              Achieve greater agility and effective business automation to speed up time-to-market<br/> and maintain high software quality.
+              Achieve greater agility and effective business automation to speed up time-to-market and maintain high software quality.
             </p>
           </div>
           <div className="w-full sm:w-1/2 bg-white p-2 flex justify-center">
@@ -100,10 +97,7 @@ const Devops = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="py-6 text-2xl"
+              className="py-6 text-2xl ml-20 font-bodyFont"
             >
               Share ownership and enjoy collaborative steps as together we shorten the software development life cycle for your business.
 
@@ -117,11 +111,10 @@ const Devops = () => {
             data-aos-easing="ease-in-sine"
               style={{
                 fontSize: "45px",
-                fontFamily: "PT Sans, sans-serif",
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl mt-16 font-bold"
+              className="text-2xl font-bodyFont mt-5 font-bold"
             >
               HOW WE WORK
             </h1>
@@ -132,7 +125,7 @@ const Devops = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="w-full"
+          className="w-[1200px] mx-auto"
         >
           <Swiper
             className="p-4"

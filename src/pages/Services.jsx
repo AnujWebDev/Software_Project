@@ -86,9 +86,9 @@ const Services = () => {
           <h1
             style={{
               fontFamily: "PT Sans, sans-serif",
-              letterSpacing: "1px",
+              letterSpacing: "2px",
             }}
-            className=" my-10 lg:mt-60 text-center w-full text-white font-bold text-4xl"
+            className=" my-10 lg:mt-60 font-bodyFont text-center w-full text-white font-bold text-4xl"
           >
             What are you trying to find?
           </h1>
@@ -127,7 +127,7 @@ const Services = () => {
               <SwiperSlide key={service.id}>
                 <div className="flex justify-center pb-2 mb-5" style={{ height: '600px',boxSizing:'border-box' }}>
                   <div className="max-w-md card bg-white p-8 rounded-xl shadow-md relative">
-                    <div className="text-xl text font-bold text-black absolute top-4 left-4">
+                    <div className="text-xl text font-bodyFont font-bold text-black absolute top-4 left-4">
                       {String(service.id).padStart(2, "0")}
                     </div>
                     <div className="flex justify-center">
@@ -142,11 +142,11 @@ const Services = () => {
                         fontFamily: "PT Sans, sans-serif",
                         letterSpacing: "1px",
                       }}
-                      className="text-center text text-black mt-3 text-2xl"
+                      className="text-center font-bodyFont text text-black mt-3 text-2xl"
                     >
                       {service.title}
                     </p>
-                    <p className="text text-black mt-2">{service.description}</p>
+                    <p className="text font-bodyFont text-black mt-2">{service.description}</p>
                   </div>
                 </div>
               </SwiperSlide>
