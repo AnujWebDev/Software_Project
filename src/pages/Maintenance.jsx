@@ -142,7 +142,7 @@ const Maintenance = () => {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-easing="ease-in-sine"
-        className="w-[1200px]  container mx-auto"
+        className="w-full lg:w-[1200px]  container mx-auto"
       >
         <Swiper
           className="p-4"

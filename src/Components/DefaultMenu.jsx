@@ -88,7 +88,7 @@ const DefaultMenu = () => {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            gap:'10px'
+            gap:'20px'
           }}
         >
           <Link
@@ -119,7 +119,7 @@ const DefaultMenu = () => {
             </Link>
 
             {isDropdownOpen && (
-              <div className=" flex flex-col">
+              <div className=" flex flex-col gap-1">
                 <Link to={"/appdev"} style={{letterSpacing:'2px'}} className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
                   APP DEVELOPMENT
                 </Link>
@@ -179,7 +179,7 @@ const DefaultMenu = () => {
             CONTACT
           </Link>
         </div>
-        <div style={{display:'flex'}} className="flex  gap-4 mt-5">
+        <div style={{display:'flex'}} className="flex  gap-4 mt-10">
               <Link>
                 <FaLinkedin className="text-3xl hover:text-red-500 hover:rotate-45 transition duration-300" />
               </Link>

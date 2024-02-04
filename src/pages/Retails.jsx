@@ -133,7 +133,7 @@ const Retails = () => {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-easing="ease-in-sine"
-        className="w-[1200px] mx-auto"
+        className="w-full lg:w-[1200px] mx-auto"
       >
         <Swiper
           className="p-4"

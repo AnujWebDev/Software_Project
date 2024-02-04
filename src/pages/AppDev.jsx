@@ -74,7 +74,7 @@ const AppDev = () => {
                 fontWeight: "bold",
                 lineHeight: "60px",
               }}
-              className="text-2xl font-bodyFont mt-20 ml-0 lg:ml-20 font-bold"
+              className="text-2xl font-bodyFont mt-4 lg:mt-20 ml-0 lg:ml-20 font-bold"
             >
               App Development
             </h1>
@@ -133,7 +133,7 @@ const AppDev = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="container mx-auto w-[1200px]"
+          className="w-full lg:w-[1200px] container mx-auto"
         >
           <Swiper
             className="p-4"

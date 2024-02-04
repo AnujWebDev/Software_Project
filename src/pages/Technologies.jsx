@@ -75,17 +75,16 @@ const Technologies = () => {
         </div>
       </div>
 
-      <div className="  ml-20 mt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-5">
-        <div className="rounded-full lg:relative lg:right-16 relative right-4 p-2 border w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-red-500 hover:bg-gray-500">
+      <div className=" ml-5  mt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-40">
+        <div className="rounded-full lg:relative lg:right-0 relative right-4 p-2 border w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-red-500 hover:bg-gray-500">
           <TfiLinkedin className=" text-white rounded-2xl p-2 mt-5 text-6xl hover:rotate-45 transition ease-in-out duration-300 " />
         </div>
-        <div className="rounded-full p-2 lg:relative lg:right-32 relative right-2 border w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-black">
+        <div className="rounded-full p-2 lg:relative lg:right-16 relative right-2 border w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-black">
           <SiTypescript className="bg-blue-500 text-white rounded-2xl p-2 mt-5 text-6xl hover:rotate-45 transition ease-in-out duration-300 hover:bg-gray-500" />
         </div>
         <div className="mx-20 flex justify-center">
           <p
             style={{
-              fontFamily: "PT Sans, sans-serif",
               fontSize: "4rem",
               fontWeight: "bolder",
               lineHeight: "4rem",
@@ -94,22 +93,22 @@ const Technologies = () => {
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
-            className="text-black font-bodyFont lg:relative lg:left-[-70px] relative left-24  my-10 text font-bold"
+            className="text-black font-bodyFont lg:relative lg:left-[-30px]  relative left-0  my-10 text font-bold"
           >
             Technologies
             <br /> we use
           </p>
         </div>
-        <div className="rounded-full p-2 border lg:relative lg:right-9 lg:top-0 relative top-52 right-2 w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-blue-400 hover:bg-gray-500">
+        <div className="rounded-full p-2 border lg:relative lg:right-[-10px] lg:top-0 relative top-52 right-2 w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-blue-400 hover:bg-gray-500">
           <FaPhp className=" text-black mt-5 rounded-full text-6xl hover:rotate-45 transition ease-in-out duration-300 hover:bg-gray-500 hover:text-white" />
         </div>
-        <div className="rounded-full p-2 border lg:relative lg:right-6 lg:bottom-0 relative bottom-5 w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-blue-400 hover:bg-gray-500">
+        <div className="rounded-full p-2 border lg:relative lg:right-16 lg:bottom-0 relative bottom-5 w-28 h-28 flex justify-center mx-auto mt-5 align-center bg-blue-400 hover:bg-gray-500">
           <FaJava className=" text-black rounded-2xl p-2 mt-5 text-6xl hover:rotate-45 transition ease-in-out duration-300  hover:text-white" />
         </div>
       </div>
       
 
-      <div className=" ml-0 lg:ml-2 mt-4  grid grid-cols-3 md:grid-cols-2 lg:grid-cols-6 gap-5" >
+      <div className=" ml-0 lg:ml-8 mt-4  grid grid-cols-3 md:grid-cols-2 lg:grid-cols-6 gap-5" >
         <div className=" rounded-full p-2 lg:relative lg:left-2 left-0 relative right-6 border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
           <SiApachecordova className="text-white text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:text-gray-500" />
         </div>
@@ -129,20 +128,20 @@ const Technologies = () => {
           <TbBrandAzure className=" bg-blue-500 text-white rounded-3xl text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:text-white  hover:bg-gray-500" />
         </div>
         </div>
-        <div className=" container mt-5 ml-0  overflow-hidden grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className=" container mt-5 ml-0 lg:ml-20  overflow-hidden grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-5">
         <div className=" rounded-full p-2 lg:relative lg:left-20 left-0 relative right-2  border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
           <TbBrandAzure className=" bg-blue-500 text-white rounded-3xl text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:text-white  hover:bg-gray-500" />
         </div>
-        <div className=" rounded-full p-2  lg:relative lg:left-16 left-0 relative right-2  border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
+        <div className=" rounded-full p-2  lg:relative lg:left-6 left-0 relative right-2  border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
           <SiDotnet className=" bg-purple-500 rounded-full  text-white text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:bg-gray-500 hover:text-white " />
         </div>
-        <div className=" rounded-full p-2 border lg:relative lg:left-10 left-0 relative right-2  w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
+        <div className=" rounded-full p-2 border lg:relative lg:-left-8 left-0 relative right-2  w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
           <SiTypescript className=" bg-blue-500 rounded-3xl  text-white text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:bg-gray-500 " />
         </div>
-        <div className=" rounded-full p-2 border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
+        <div className=" rounded-full p-2 border w-28 lg:relative lg:-left-20 left-0 relative right-0 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
           <IoDiamond className=" text-yellow-500  text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s]  hover:text-gray-500" />
         </div>
-        <div className=" rounded-full p-2 border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">
+        <div className=" rounded-full p-2 border w-28 h-28 lg:relative lg:-left-32 left-0 relative right-0 flex justify-center mx-5 align-center pt-6 bg-black">
           <FaJava className=" bg-blue-400 rounded-3xl  text-black  text-6xl hover:rotate-45 transition ease-in-out duration-[0.3s] hover:bg-gray-500  hover:text-white" />
         </div>
         </div>

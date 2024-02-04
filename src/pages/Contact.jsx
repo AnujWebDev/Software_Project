@@ -22,7 +22,7 @@ const Contact = () => {
                 fontSize: "30px",
                 fontWeight: "bold",
               }}
-              className="py-14 lg:py-0 flex italic text-xl"
+              className="py-14 lg:py-0 ml-0 mt-10 lg:ml-20 lg:mt-20 font-bodyFont flex italic text-xl"
             >
               Contact <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
             </p>
@@ -30,14 +30,10 @@ const Contact = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
-              style={{
-                fontFamily: "PT Sans, sans-serif",
-              }}
-              className="py-0 text-2xl"
+              className="py-0 ml-0 font-bodyFont lg:ml-20 text-2xl"
             >
               Let’s work together to create game-changing experiences that will
-              take
-              <br /> your brand from bland to brilliant.
+              take your brand from bland to brilliant.
             </p>
           </div>
           <div className="w-full lg:w-1/2 p-2 mt-10 lg:mt-0 flex justify-center">
@@ -78,7 +74,7 @@ const Contact = () => {
     <h1
       data-aos="fade-up"
       data-aos-duration="500"
-      className="text-4xl mt-10 text-primary font-bold m-3"
+      className="text-4xl mt-0 ml-0 font-bodyFont lg:ml-20 lg:mt-20  text-primary font-bold m-3"
     >
       Let’s Create something Great Together!
     </h1>
@@ -86,28 +82,27 @@ const Contact = () => {
   <div
     data-aos="fade-up"
     data-aos-duration="1000"
-    className="flex flex-col md:flex-row"
+    className="flex flex-col ml-0 lg:ml-20 md:flex-row"
   >
     <div className="md:w-1/2">
-      {/* Left side - Address */}
       <div className="">
         <div className="p-4 flex items-center">
           <div className="border-l-2 flex pl-4">
-            <strong><IoLocationOutline className="text-4xl hover:text-primary text-primary mx-5"/></strong>
-            <p className="text-center text-xl hover:text-primary"> 1/965(A) Vishal Khand 1, Gomti Nagar, Lucknow - 226010</p>
+            <strong><IoLocationOutline className="text-4xl  hover:text-primary text-primary mx-5"/></strong>
+            <p className="text-left text-xl font-bodyFont hover:text-primary"> 1/965(A) Vishal Khand 1, Gomti Nagar, Lucknow - 226010</p>
           </div>
         </div>
 
         <div className="p-4 flex items-center">
           <div className="border-l-2 flex pl-4">
-            <strong><IoIosMailUnread className="text-4xl hover:text-primary text-primary mx-5"/></strong>
-            <p  className="text-center text-xl hover:text-primary ">info@cypher-squad.com1</p>
+            <strong><IoIosMailUnread className="text-4xl font-bodyFont hover:text-primary text-primary mx-5"/></strong>
+            <p  className="text-left text-xl font-bodyFont hover:text-primary ">info@cypher-squad.com1</p>
           </div>
         </div>
         <div className="p-4 flex items-center">
           <div className="border-l-2 flex pl-4">
-            <strong><SlCallOut className="text-4xl text-primary hover:text-primary mx-5"/></strong>
-            <p  className="text-center text-xl hover:text-primary">+91-880-021-3778, +1-445-900-3119</p>
+            <strong><SlCallOut className="text-4xl font-bodyFont text-primary hover:text-primary mx-5"/></strong>
+            <p  className="text-left text-xl font-bodyFont hover:text-primary">+91-880-021-3778, +1-445-900-3119</p>
           </div>
         </div>
       </div>
@@ -154,9 +149,9 @@ const Contact = () => {
           <div className="mt-4 ">
             <button
               type="submit"
-              className="bg-primary p-3 w-40 mb-5  flex justify-center rounded-full hover:bg-gray-500 hover:text-white hover:no-underline text-white text-center"
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
+              className="bg-primary font-bodyFont p-3 w-40 mb-5  flex justify-center rounded-full hover:bg-gray-500 hover:text-white hover:no-underline text-white text-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               Submit <TbLocationShare className="text-2xl mx-2"/>
             </button>

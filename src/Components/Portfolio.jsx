@@ -204,7 +204,7 @@ const Portfolio = () => {
               fontSize: "30px",
               fontWeight: "bold",
             }}
-            className="py-14 font-bodyFont lg:py-6 flex italic m-20 text-xl relative"
+            className="py-14 font-bodyFont lg:py-6 flex italic m-5 lg:m-20 text-xl relative"
           >
             Portfolio <BsArrow90DegRight className="ml-2 rotate-90 mt-2" />
           </p>

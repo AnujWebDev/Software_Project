@@ -49,7 +49,7 @@ const Far = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
             style={{whiteSpace:'nowrap'}}
-            className="flex hover:text-red-500 font-bodyFont transition ease-in-out duration-[#0.3s]x   items-center text-base md:text-2xl mt-4 md:mt-0 md:ml-6"
+            className="flex hover:text-red-500 font-bodyFont ml-16 lg:ml-0 transition ease-in-out duration-[#0.3s]x   items-center text-base md:text-2xl mt-4 md:mt-0 md:ml-6"
           >
             <VscCallIncoming className="text-4xl  md:text-4xl  mx-2 md:mx-5" />
             +91-880-021-3778
