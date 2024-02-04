@@ -48,18 +48,18 @@ const Footer = () => {
               example@email.com
             </p>
             <div className="flex gap-4 mt-5">
-              <Link>
+              <a href="https://www.linkedin.com/">
                 <FaLinkedin className="text-3xl hover:text-red-500 hover:rotate-45 transition duration-300" />
-              </Link>
-              <Link>
+              </a>
+              <a href="https://www.facebook.com/">
                 <FaFacebook className="text-3xl hover:text-white hover:rotate-45 hover:bg-[#0d6efd] transition duration-300" />
-              </Link>
-              <Link>
+              </a>
+              <a href="https://twitter.com/">
                 <FaTwitterSquare className="text-3xl hover:text-white hover:rotate-45 hover:bg-[#0d6efd] transition duration-300" />
-              </Link>
-              <Link>
+              </a>
+              <a href="https://www.instagram.com/">
                 <FaInstagramSquare className="text-3xl hover:text-red-500 hover:rotate-45 transition duration-300" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

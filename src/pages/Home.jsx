@@ -15,14 +15,14 @@ const Home = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <p style={{letterSpacing:'2px',fontSize:'25px'}} className=" text-left font-bodyFont italic text-2xl">
+              <p style={{fontSize:'1.5rem'}} className=" text-left font-bodyFont italic text-2xl">
                 Enhancing the potential of next-generation technology by offering
                 solutions that align with your business objectives.
               </p>
-              <h1 style={{letterSpacing:'2px'}} className="text-4xl mt-4 font-bodyFont md:text-6xl text-left">
+              <h1 style={{letterSpacing:'2px',fontSize:'47px'}} className="text-4xl mt-4 font-semibold font-bodyFont md:text-6xl text-left">
                 We are passionate about
                 <br />
-                <span className="mt-20 font-extrabold text-4xl">
+                <p style={{fontSize:'50px',whiteSpace:'nowrap'}} className="mt-10 font-extrabold text-4xl">
                   <TypeAnimation
                     sequence={[
                       "Fostering creativity.",
@@ -32,7 +32,7 @@ const Home = () => {
                     ]}
                     repeat={Infinity}
                   />
-                </span>
+                </p>
               </h1>
 
               <div className="flex mt-10 md:justify-start">
@@ -42,8 +42,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 md:mt-0 hidden lg:flex justify-center">
-            <img src={logo} alt="logo" className="w-full md:w-3/4" />
+          <div className="w-full lg:w-1/2 md:mt-0 hidden lg:flex lg:justify-center">
+            <img src={logo} alt="logo" style={{maxWidth:'300px'}} className=" md:w-3/4" />
           </div>
         </div>
         <div

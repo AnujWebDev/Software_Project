@@ -18,7 +18,7 @@ import { SiDotnet } from "react-icons/si";
 import { IoDiamond } from "react-icons/io5";
 const Technologies = () => {
   return (
-    <div className=" overflow-hidden">
+    <div className=" overflow-hidden container mx-auto">
       <div className="overflow-hidden lg:ml-5  grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-5">
         {" "}
         <div className=" rounded-full lg:relative lg:right-0 relative right-2 p-2 border w-28 h-28 flex justify-center mx-5 align-center pt-6 bg-black">

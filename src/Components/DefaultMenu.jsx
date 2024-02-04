@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { scaleDown as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowDropDown } from "react-icons/md";
@@ -15,14 +15,15 @@ import {
 const DefaultMenu = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [shouldCloseMenu, setShouldCloseMenu] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
 
-  const toggleMenu = ({ isOpen }) => {
-    setMenuOpen(isOpen);
-    if (!isOpen) {
+  const onStateChange = (state) => {
+    setMenuOpen(state.isOpen);
+    if (!state.isOpen) {
       setDropdownOpen(false);
     }
   };
@@ -30,7 +31,14 @@ const DefaultMenu = () => {
   const closeNavbar = () => {
     setDropdownOpen(false);
     setMenuOpen(false);
+    setShouldCloseMenu(true);
   };
+
+  useEffect(() => {
+    if (shouldCloseMenu) {
+      setShouldCloseMenu(false);
+    }
+  }, [shouldCloseMenu]);
   var styles = {
     bmBurgerButton: {
       position: "fixed",
@@ -79,22 +87,23 @@ const DefaultMenu = () => {
         styles={styles}
         pageWrapId={"page-wrap"}
         outerContainerId={"outer-container"}
-        itemListElement="div"
         right
-        onStateChange={toggleMenu}
+        onStateChange={onStateChange}
+        isOpen={isMenuOpen}
+
       >
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            gap:'20px'
+            gap:'40px'
           }}
         >
           <Link
             to={"/"}
             style={{letterSpacing:'2px'}}
-            className=" font-bodyFont hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform hover:text-primary hover:scale-90"
+            className=" font-bodyFont text-2xl hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform hover:text-primary hover:scale-90"
             onClick={closeNavbar}
           >
             HOME
@@ -102,17 +111,19 @@ const DefaultMenu = () => {
           <Link
             to={"/about"}
             style={{letterSpacing:'2px'}}
-            className=" font-bodyFont  hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90"
+            onClick={closeNavbar}
+            className=" font-bodyFont text-2xl  hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90"
           >
             ABOUT US
           </Link>
-          <Link to={'/portofolio'} style={{letterSpacing:'2px'}} className=" font-bodyFont  hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90">
+          <Link to={'/portofolio'} style={{letterSpacing:'2px'}} onClick={closeNavbar} className=" font-bodyFont text-2xl  hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90">
             PORTFOLIO
           </Link>
           <div className="relative inline-block">
             <Link
               style={{letterSpacing:'2px'}}
-              className="flex font-bodyFont hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90"
+              
+              className="flex font-bodyFont text-2xl hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90"
               onClick={toggleDropdown}
             >
               SERVICES <MdOutlineArrowDropDown className="ml-2 text-2xl" />
@@ -120,12 +131,13 @@ const DefaultMenu = () => {
 
             {isDropdownOpen && (
               <div className=" flex flex-col gap-1">
-                <Link to={"/appdev"} style={{letterSpacing:'2px'}} className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
+                <Link to={"/appdev"} style={{letterSpacing:'2px'}} onClick={closeNavbar}   className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90">
                   APP DEVELOPMENT
                 </Link>
                 <Link
                   to={"/webdev"}
                   style={{letterSpacing:'2px'}}
+                  onClick={closeNavbar}
                   className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform hover:text-primary hover:scale-90"
                 >
                   WEBSITE DEVELOPMENT
@@ -133,12 +145,14 @@ const DefaultMenu = () => {
                 <Link
                   to={"/brand"}
                   style={{letterSpacing:'2px'}}
+                  onClick={closeNavbar}
                   className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
                   BRANDING & DESIGN
                 </Link>
                 <Link
                   to={"/consultation"}
+                  onClick={closeNavbar}
                   style={{letterSpacing:'2px'}}
                   className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
@@ -146,6 +160,7 @@ const DefaultMenu = () => {
                 </Link>
                 <Link
                   to={"/digital"}
+                  onClick={closeNavbar}
                   style={{letterSpacing:'2px'}}
                   className=" font-bodyFont ml-10 text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
@@ -153,6 +168,7 @@ const DefaultMenu = () => {
                 </Link>
                 <Link
                   to={"/devops"}
+                  onClick={closeNavbar}
                   style={{letterSpacing:'2px'}}
                   className=" ml-10 font-bodyFont text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
@@ -160,6 +176,7 @@ const DefaultMenu = () => {
                 </Link>
                 <Link
                   to={"/retainers"}
+                  onClick={closeNavbar}
                   style={{letterSpacing:'2px'}}
                   className=" ml-10 font-bodyFont text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
@@ -167,6 +184,7 @@ const DefaultMenu = () => {
                 </Link>
                 <Link
                   to={"/maintenance"}
+                  onClick={closeNavbar}
                   style={{letterSpacing:'2px'}}
                   className=" ml-10 font-bodyFont text-lg hover:cursor-pointer text-white w-full rounded transition duration-500 ease-in-out transform  hover:text-primary hover:scale-90"
                 >
@@ -175,23 +193,23 @@ const DefaultMenu = () => {
               </div>
             )}
           </div>
-          <Link to={'/contact'} style={{letterSpacing:'2px'}} className=" font-bodyFont hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90">
+          <Link to={'/contact'} onClick={closeNavbar} style={{letterSpacing:'2px'}} className="text-2xl font-bodyFont hover:cursor-pointer text-white w-full rounded transition duration-500 text-left ease-in-out transform  hover:text-primary hover:scale-90">
             CONTACT
           </Link>
         </div>
         <div style={{display:'flex'}} className="flex  gap-4 mt-10">
-              <Link>
+        <a href="https://www.linkedin.com/">
                 <FaLinkedin className="text-3xl hover:text-red-500 hover:rotate-45 transition duration-300" />
-              </Link>
-              <Link>
+              </a>
+              <a href="https://www.facebook.com/">
                 <FaFacebook className="text-3xl hover:text-white hover:rotate-45 hover:bg-[#0d6efd] transition duration-300" />
-              </Link>
-              <Link>
+              </a>
+              <a href="https://twitter.com/">
                 <FaTwitterSquare className="text-3xl hover:text-white hover:rotate-45 hover:bg-[#0d6efd] transition duration-300" />
-              </Link>
-              <Link>
+              </a>
+              <a href="https://www.instagram.com/">
                 <FaInstagramSquare className="text-3xl hover:text-red-500 hover:rotate-45 transition duration-300" />
-              </Link>
+              </a>
             </div>
             <p style={{display:'flex'}} className=" font-bodyFont text-sm mt-10 hover:text-red-500  lg:mb-0">
               <FaPhoneSquareAlt className="text-2xl mr-2" />+91-880-021-3778
