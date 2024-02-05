@@ -106,7 +106,7 @@ const WebDev = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
 
-              className="py-6 font-bodyFont ml-0 mb-20 lg:ml-12 text-2xl"
+              className="py-6 font-bodyFont ml-0 mb-20 lg:ml-20 text-2xl"
             >
               Website revamp or building from scratch, let’s do it right. You get responsive, user-friendly websites on time and on budget.
             </p>

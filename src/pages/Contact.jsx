@@ -113,14 +113,14 @@ const Contact = () => {
           <div className="mb-10 flex gap-2 justify-center">
             <input
               type="text"
-              className="w-full border-b-2 border-t-0 border-r-0 border-l-0 bg-transparent outline-none"
+              className="w-full border p-5 bg-transparent outline-none"
               placeholder="Enter name"
               data-aos="fade-up"
               data-aos-duration="1000"
             />
             <input
               type="email"
-              className="w-full border-b-2 border-t-0 border-r-0 border-l-0 bg-transparent outline-none"
+              className="w-full border p-5 bg-transparent outline-none"
               placeholder="Enter email"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -129,7 +129,7 @@ const Contact = () => {
           <div className="mb-10">
             <input
               type="text"
-              className="w-full border-b-2 border-t-0 border-r-0 border-l-0 bg-transparent outline-none"
+              className="w-full border p-5 bg-transparent outline-none"
               placeholder="Enter subject"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -137,7 +137,7 @@ const Contact = () => {
           </div>
           <div className="mb-4">
             <textarea
-              className="w-full border-b-2 border-t-0 border-r-0 border-l-0 bg-transparent outline-none"
+              className="w-full border p-5 bg-transparent outline-none"
               placeholder="Enter message"
               cols="30"
               rows="4"

@@ -119,7 +119,7 @@ const AppService = () => {
           >
             {servicesData.map((service) => (
               <SwiperSlide key={service.id}>
-                <div className="flex justify-center pb-2 mb-5" style={{ height: '400px',boxSizing:'border-box' }}>
+                <div className="flex justify-center pb-2 mb-5" style={{ height: '500px',boxSizing:'border-box' }}>
                   <div className="max-w-md card font-bodyFont bg-white p-8  shadow-md relative">
                     <div className="text-xl text font-bold text-black absolute top-4 left-4">
                       {String(service.id).padStart(2, "0")}
