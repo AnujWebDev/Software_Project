@@ -14,7 +14,7 @@ const Far = () => {
           data-aos-duration="500"
           data-aos-easing="ease-in-sine"
           style={{whiteSpace:'nowrap'}}
-          className="text-3xl font-bodyFont md:text-3xl p-20 lg:text-6xl font-extrabold py-6"
+          className="text-3xl font-bodyFont md:text-3xl p-5 lg:p-20 lg:text-6xl font-extrabold py-6"
         >
           You've made it this far......
         </h1>
@@ -39,7 +39,7 @@ const Far = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
             style={{whiteSpace:'nowrap'}}
-            className="flex hover:text-red-500 font-bodyFont ml-16 transition ease-in-out duration-[#0.3s] items-center text-base md:text-2xl"
+            className="flex hover:text-red-500 font-bodyFont lg:ml-16 transition ease-in-out duration-[#0.3s] items-center text-base md:text-2xl"
           >
             <ImMail3 className="text-4xl  md:text-4xl  mx-2 md:mx-5" />
             info@cypher-squad.com
@@ -49,7 +49,7 @@ const Far = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
             style={{whiteSpace:'nowrap'}}
-            className="flex hover:text-red-500 font-bodyFont ml-16 lg:ml-0 transition ease-in-out duration-[#0.3s]x   items-center text-base md:text-2xl mt-4 md:mt-0 md:ml-6"
+            className="flex hover:text-red-500 font-bodyFont  lg:ml-0 transition ease-in-out duration-[#0.3s]x   items-center text-base md:text-2xl mt-4 md:mt-0 md:ml-6"
           >
             <VscCallIncoming className="text-4xl  md:text-4xl  mx-2 md:mx-5" />
             +91-880-021-3778

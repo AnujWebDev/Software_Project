@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <div className="hero1 overflow-hidden min-h-screen container mx-auto pt-20">
-        <div className="p-0 ml-10 flex flex-col md:flex-row">
+        <div className="p-0 ml-0 lg:ml-10 flex flex-col md:flex-row">
           <div className="hero-content w-full lg:w-3/4 pt-20 md:pt-0 text-center">
             <div
               data-aos="fade-right"
@@ -22,7 +22,7 @@ const Home = () => {
               <h1 style={{letterSpacing:'2px',fontSize:'47px'}} className="text-4xl mt-4 font-semibold font-bodyFont md:text-6xl text-left">
                 We are passionate about
                 <br />
-                <p style={{fontSize:'50px',whiteSpace:'nowrap'}} className="mt-10 font-extrabold text-4xl">
+                <p style={{fontSize:'50px'}} className="mt-10 font-extrabold text-4xl">
                   <TypeAnimation
                     sequence={[
                       "Fostering creativity.",
@@ -63,12 +63,12 @@ const Home = () => {
             word-of-mouth, and years of collaborative work with our clients, we
             have naturally grown our business.
           </p>
-          <p style={{letterSpacing:'2px'}} className="text-xl text-gray-500 text  text-center mt-5">
+          <p style={{letterSpacing:'2px'}} className="text-xl font-bodyFont text-gray-500 text  text-center mt-5">
             Everything we produce is intended to provide your company a unique
             advantage in your industry, from creative executions and digital
             experiences to brand and marketing strategies.
           </p>
-          <p style={{letterSpacing:'2px'}} className="text-xl text-gray-500 text text-center py-10">
+          <p style={{letterSpacing:'2px'}} className="text-xl font-bodyFont text-gray-500 text text-center py-10">
             Considering that the most unfair commercial advantage is inventiveness.
           </p>
         </div>
