@@ -109,7 +109,7 @@ const Brand = () => {
               style={{
                 fontFamily: "PT Sans, sans-serif",
               }}
-              className="py-6 ml-20 mb-20 text-2xl"
+              className="py-6 ml-0 lg:ml-20 mb-20 text-2xl"
             >
               Making your business a lasting digital success isn't easy. Our full-services digital team can design and fuel your full-fledged difital marketing plans.
             </p>

@@ -97,7 +97,7 @@ const Devops = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-              className="py-6 text-2xl ml-20 font-bodyFont"
+              className="py-6 text-2xl ml-0 lg:ml-20 font-bodyFont"
             >
               Share ownership and enjoy collaborative steps as together we shorten the software development life cycle for your business.
 

@@ -14,7 +14,7 @@ const Far = () => {
           data-aos-duration="500"
           data-aos-easing="ease-in-sine"
           style={{whiteSpace:'nowrap'}}
-          className="text-3xl font-bodyFont md:text-3xl p-5 lg:p-20 lg:text-6xl font-extrabold py-6"
+          className="text-3xl font-bodyFont md:text-3xl p-5 lg:pl-20 lg:text-6xl font-extrabold "
         >
           You've made it this far......
         </h1>
@@ -22,7 +22,7 @@ const Far = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-sine"
-          className="text-base font-bodyFont md:text-lg p-5  lg:p-20 py-6"
+          className="text-base font-bodyFont md:text-lg p-5  lg:pl-20"
         >
           “Leading provider of technology-driven digital marketing solutions, we
           take pride in crafting customized strategies for our clients based on
