@@ -1,11 +1,17 @@
 import React from "react";
 import { BsArrow90DegRight } from "react-icons/bs";
-import ab from "../assets/ab.png";
-import ab2 from "../assets/ab2.png";
-import ab3 from "../assets/ab3.png";
-import ab4 from "../assets/ab4.png";
-import ab5 from "../assets/ab5.png";
-import ab6 from "../assets/ab6.png";
+import a1 from "../assets/3.png"
+import a11 from "../assets/a11.png"
+import a2 from "../assets/9.png"
+import a22 from "../assets/a22.png"
+import a3 from "../assets/2.png"
+import a33 from "../assets/a33.png"
+import a4 from "../assets/7.png";
+import a44 from "../assets/a44.png";
+import a5 from "../assets/4.png";
+import a55 from "../assets/a55.png";
+import a6 from "../assets/1.png";
+import a66 from "../assets/a66.png";
 import Far from "./Far";
 
 const About = () => {
@@ -56,13 +62,14 @@ const About = () => {
       </div>
       <div className="lg:w-full mx-auto hover:bg-gradient-to-r from-teal-800 to-orange-600 hover:text-white">
         <div className="flex flex-col lg:flex-row container p-10 my-10">
-          <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
+          <div className="w-full lg:w-1/2 flex  justify-center items-center">
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <img src={ab} className="rotate-infinite" alt="ab"></img>
+              <img id="img11" src={a11} className="rotate-infinite mt-10 w-40 h-40" alt="services"></img>
+            <img id="img22" src={a1} className="rotate-infinite mt-10 hidden" alt="services"></img>
             </div>
           </div>
           <div className="w-full lg:w-1/2">
@@ -96,13 +103,14 @@ const About = () => {
               strive for the next big thing drives our progress.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
+          <div className="w-full lg:w-1/2 flex  justify-center items-center">
             <div
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <img src={ab2} className="rotate-infinite" alt="ab"></img>
+             <img id="img11" src={a22} className="rotate-infinite mt-10 w-40 h-40" alt="services"></img>
+            <img id="img22" src={a2} className="rotate-infinite mt-10 hidden" alt="services"></img>
             </div>
           </div>
         </div>
@@ -110,13 +118,14 @@ const About = () => {
 
       <div className="lg:w-full mx-auto hover:bg-gradient-to-r from-teal-800 to-orange-600 hover:text-white">
         <div className="flex flex-col lg:flex-row container p-10 my-10">
-          <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <img src={ab3} className="rotate-infinite" alt="ab"></img>
+              <img id="img11" src={a33} className="rotate-infinite mt-10 w-40 h-40" alt="services"></img>
+            <img id="img22" src={a3} className="rotate-infinite mt-10 hidden" alt="services"></img>
             </div>
           </div>
           <div className="w-full lg:w-1/2">
@@ -150,26 +159,28 @@ const About = () => {
               that exceed their initial goals.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
+          <div className="w-full lg:w-1/2 flex  justify-center items-center">
             <div
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <img src={ab4} className="rotate-infinite" alt="ab"></img>
+               <img id="img11" src={a44} className="rotate-infinite mt-10 w-40 h-40" alt="services"></img>
+            <img id="img22" src={a4} className="rotate-infinite mt-10 hidden" alt="services"></img>
             </div>
           </div>
         </div>
       </div>
       <div className="lg:w-full mx-auto hover:bg-gradient-to-r from-teal-800 to-orange-600 hover:text-white">
         <div className="flex flex-col lg:flex-row container p-10 my-10">
-          <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <img src={ab5} className="rotate-infinite" alt="ab"></img>
+             <img id="img11" src={a55} className="rotate-infinite mt-10 w-40 h-40" alt="services"></img>
+            <img id="img22" src={a5} className="rotate-infinite mt-10 hidden" alt="services"></img>
             </div>
           </div>
           <div className="w-full lg:w-1/2">
@@ -203,13 +214,14 @@ const About = () => {
               response.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 flex bg-white justify-center items-center">
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
             <div
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
             >
-              <img src={ab6} className="rotate-infinite" alt="ab"></img>
+               <img id="img11" src={a66} className="rotate-infinite mt-10 w-40 h-40" alt="services"></img>
+            <img id="img22" src={a6} className="rotate-infinite mt-10 hidden" alt="services"></img>
             </div>
           </div>
         </div>

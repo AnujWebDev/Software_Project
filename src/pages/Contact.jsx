@@ -6,6 +6,8 @@ import { TbLocationShare } from "react-icons/tb";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosMailUnread } from "react-icons/io";
 import { SlCallOut } from "react-icons/sl";
+import c1 from "../assets/c1.png"
+import c from "../assets/6.png"
 const Contact = () => {
   return (
     <div className="overflow-hidden">
@@ -43,7 +45,7 @@ const Contact = () => {
               data-aos-easing="ease-in-sine"
             >
               <img
-                src={cont}
+                src={c1}
                 id="img1"
                 style={{ width: "100%", maxWidth: "200px", height: "auto" }}
                 className="rotate-infinite "
@@ -56,10 +58,10 @@ const Contact = () => {
               data-aos-easing="ease-in-sine"
             >
               <img
-                src={cont1}
+                src={c}
                 id="img2"
                 style={{ width: "100%", maxWidth: "300px", height: "auto" }}
-                className="rotate-infinite hidden"
+                className="rotate-infinite mt-20 hidden"
                 alt="services"
               ></img>
             </div>

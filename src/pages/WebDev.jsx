@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrow90DegRight } from "react-icons/bs";
-import s1 from "../assets/s1.png";
+import s from "../assets/8.png"
+import s1 from "../assets/s11.png"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -90,12 +91,13 @@ const WebDev = () => {
               Design and build websites that convert audiences into customers.It’s what we do best.
             </p>
           </div>
-          <div className="w-full sm:w-1/2 bg-white p-2 flex justify-center">
+          <div className="w-full sm:w-1/2 p-2 flex justify-center">
             <div data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine" 
             >
-            <img src={s1} className="rotate-infinite" alt="services"></img>
+            <img id="img11" src={s1} className="rotate-infinite mt-10 w-40 h-40" alt="services"></img>
+            <img id="img22" src={s} className="rotate-infinite mt-10 hidden" alt="services"></img>
             </div>
           </div>
         </div>
